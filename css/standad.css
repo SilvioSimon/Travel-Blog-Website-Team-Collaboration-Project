@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'Arima';
+    font-size: 64px;
+    font-weight: 700;
+    color: #F1C953;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-family: 'Arima';
+    font-size: 40px;
+    font-weight: 600;
+    color: #4EA487;
+    margin-bottom: 8px;
+}
+
+h4 {
+    font-family: 'Palanquin';
+    font-size: 32px;
+    font-weight: 400;
+    color: #54370D;
+}
+
+
+.hero-section-layout {
+    margin: 208px 120px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 27px;
+}
+
+.hero-section {
+    max-width: 902px;
+}
+
+.article-info {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.article-info-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.article-info span {
+    font-family: 'Palanquin';
+    font-size: 16px;
+    font-weight: 400;
+    color: #54370D;
+}
+
+.article-info img {
+    max-height: 18px;
+    max-width: 20px;
+}
+
+.author-card {
+    border-radius: 30px;
+    padding: 16px 16px 0;
+    margin-bottom: 0;
+    width: 25%;
+    background-color: #4EA48733;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.author-card img {
+    height: 120px;
+    width: 120px;
+}
+
+.author-card p {
+    color: #54370D;
+}
+
+.author-name p {
+    font-family: 'Arima';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.author-role p {
+    font-family: 'Arima';
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.author-bio {
+    font-family: 'Palaquin';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+}
