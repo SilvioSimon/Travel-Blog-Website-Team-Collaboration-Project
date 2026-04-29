@@ -106,3 +106,54 @@ h6 {
     font-weight: 400;
     text-align: start;
 }
+
+.pro-tipps {
+    margin: 88px 145px 0;
+}
+
+.pro-tipps-button {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #4EA487;
+    width: 196px;
+    height: 66px;
+    border-radius: 10px;
+    transform: rotate(-13.67deg);
+    margin-bottom: -24px;
+}
+
+.pro-tipps-button img{
+    height: 42px;
+    width: 41px;
+    transform: rotate(13.67deg);
+}
+
+.pro-tipps-button p {
+    color: #F1C953;
+    font-family: "Palanquin";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.pro-tipps-tipps {
+    z-index: 1;
+    margin-left: 47px;
+    padding: 26px 16px;
+    border-radius: 30px;
+    background-color: #4EA48733;
+}
+
+.pro-tipps-tipps ol{
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.pro-tipps-tipps span{
+    color: #4EA487;
+    font-weight: 700;
+}

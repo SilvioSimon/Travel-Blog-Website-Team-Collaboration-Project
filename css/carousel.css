@@ -51,7 +51,7 @@
 
 .article-lorem {
     max-width: 1201px;
-    margin: 88px 100px
+    margin: 88px 100px;
 }
 
 .article-lorem p {
@@ -61,3 +61,41 @@
     font-weight: 400;
     color: #3D3D3D;
 }
+
+.list-lorem {
+    padding: 0 200px;
+}
+
+.list-lorem p {
+    margin-bottom: 24px;
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.list-lorem li {
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.list-lorem span {
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 700;
+    color: #3D3D3D;
+}
+
+.article-lorem-two{
+margin: 88px 100px;
+}
+
+.article-lorem-two p{
+        color: #3D3D3D;
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+}
+
