@@ -91,6 +91,8 @@ h2 {
     padding: 40px 150px;
     display: flex;
     font-size: 28px;
+    font-family: palanquin;
+    font-weight: 500;
 }
 
 .content {
@@ -238,6 +240,7 @@ h2 {
     gap: 30px;
     background-color: white;
     text-align: left;
+    max-width: 1440px;
 }
 
 .faq_headline {
@@ -327,11 +330,11 @@ textarea {
 
 
 input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color: #ffffff;
+    color: rgba(48, 48, 48, 0.5);
     padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+    border: 1px solid rgba(48, 48, 48, 0.5);
+    border-radius: 50px;
     cursor: pointer;
     display: block;
     margin: 30px auto;
@@ -354,6 +357,9 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     padding: 20px 0px;
+    font-size: 28px;
+    font-family: Palanquin;
+    font-weight: 500;
 }
 
 .contact_img {
