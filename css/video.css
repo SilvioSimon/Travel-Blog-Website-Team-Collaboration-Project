@@ -1,0 +1,24 @@
+.article-lorem {
+    max-width: 1201px;
+    margin: 88px 100px;
+}
+
+.article-lorem p {
+    text-align: start;
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
+
+.list-lorem {
+    padding: 0 200px;
+}
+
+.list-lorem p {
+    margin-bottom: 24px;
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3D;
+}
