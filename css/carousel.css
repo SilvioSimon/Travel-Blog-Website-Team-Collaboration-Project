@@ -1,7 +1,5 @@
-
-
 .beach-destination-wrapper {
-    margin: 80px 50px;
+    margin: 0 50px;
 }
 
 .beach-destination-wrapper p {
@@ -9,7 +7,7 @@
     font-size: 32px;
     font-weight: 600;
     color: #54370D;
-    margin-bottom: 64px;
+    margin: 88px 64px;
     text-align: center;
 }
 
@@ -37,7 +35,7 @@
     margin-left: -140px;
 }
 
-.beach-destination-slider:first-child{
+.beach-destination-slider:first-child {
     margin-left: 50px;
 }
 
@@ -49,4 +47,17 @@
 
 .beach-destination-slider:hover~.beach-destination-slider {
     transform: perspective(750px) rotateY(-20deg) translateX(20px);
+}
+
+.article-lorem {
+    max-width: 1201px;
+    margin: 88px 100px
+}
+
+.article-lorem p {
+    text-align: start;
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3D;
 }
