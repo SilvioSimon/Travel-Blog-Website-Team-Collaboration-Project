@@ -102,7 +102,7 @@
             </div>
             </div>
         </section>
-        <section class="faq">
+        <section id="faq" class="faq">
             <div class="faq">
                 <div class="faq_headline">
                     <img class="img_faq" src="assets/icons/live_help (1).svg" alt="Ein Fragezeichen">
@@ -141,6 +141,37 @@
                         accusantium in, iusto perferendis!</p>
                 </details>
             </div>
+        </section>
+        <section id="contact">
+            <div class="contact_headline">
+                <img class="contact_img" src="assets/icons/person_pin (1).svg" alt="Darstellung eines Kopfes">
+                <h2>Contact form</h2>
+            </div>
+            <p class="contact_p">Have a question or an idea to collaborate?
+                Get in touch—I’d love to hear from you and explore how we can work together.</p>
+
+            <form action="index.html">
+                <div class="row">
+                    <div class="col">
+                        <label for="fname">What's your name?</label>
+                        <input type="text" id="fname" name="firstname">
+                    </div>
+                    <div class="col">
+                        <label for="email">What's your email?</label>
+                        <input type="email" id="email" name="email" autocomplete="off">
+                    </div>
+                </div>
+
+                <label for="subject">How can I help?</label>
+                <textarea id="subject" name="subject"></textarea>
+                <div class="policy-container">
+                    <input type="checkbox" id="policy" name="policy" required>
+                    <label for="policy">I've read the <a href="#">privacy policy</a>and agree to the processing of my
+                        data as outlined.</label>
+                </div>
+
+                <input type="submit" value="Absenden">
+            </form>
         </section>
     </main>
 
