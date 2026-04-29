@@ -1,9 +1,9 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: "Arima";
+    src: url(../assets/fonts/Arima/Arima-VariableFont_wght.ttf);
 } 
 
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: "Palanquin";
+    src: url(../assets/fonts/Palanquin/Palanquin-Regular.ttf);
 }
