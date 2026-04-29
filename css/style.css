@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-h3 {
+h2 {
     color: var(--global-h2-color);
     font-size: 48px;
 }
@@ -283,8 +283,7 @@ details[open] summary {
     padding-bottom: 5px;
 }
 
-HEAD
-summary::-webkit-details-marker {
+HEAD summary::-webkit-details-marker {
     display: none;
 }
 
@@ -413,31 +412,5 @@ input[type=submit]:hover {
 }
 
 .policy-container a:hover {
-    text-decoration: underline;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    text-decoration: underline;
+}

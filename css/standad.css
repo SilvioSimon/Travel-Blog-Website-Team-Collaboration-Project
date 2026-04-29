@@ -7,27 +7,27 @@ html {
     scroll-behavior: smooth;
 }
 
-h2 {
+h4 {
     font-family: 'Arima';
     font-size: 64px;
     font-weight: 700;
-    color: #F1C953;
+    color: var(--global-h4-color);
     margin-bottom: 8px;
 }
 
-h3 {
+h5 {
     font-family: 'Arima';
     font-size: 40px;
     font-weight: 600;
-    color: #4EA487;
+    color: var(--global-h5-color);
     margin-bottom: 8px;
 }
 
-h4 {
+h6 {
     font-family: 'Palanquin';
     font-size: 32px;
     font-weight: 400;
-    color: #54370D;
+    color: var(--global-h6-color);
 }
 
 
