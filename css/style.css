@@ -70,7 +70,7 @@ h2 {
     width: 100%;
 }
 
-.higlights-top {
+.highlights-top {
     display: flex;
     display: flex;
     flex-direction: column;
@@ -263,6 +263,8 @@ details {
     border-radius: 5px;
     margin-bottom: 10px;
     background-color: rgba(241, 201, 83, 1);
+    width: 84%;
+    margin-left: 116px;
 }
 
 summary {
@@ -385,7 +387,6 @@ input[type=submit]:hover {
 
 .col {
     flex: 1;
-
 }
 
 .policy-container {
@@ -413,4 +414,24 @@ input[type=submit]:hover {
 
 .policy-container a:hover {
     text-decoration: underline;
+}
+
+input[type=submit] {
+    background-color: #ffffff;
+    color: rgba(48, 48, 48, 0.5);
+    border: 1px solid rgba(48, 48, 48, 0.5);
+    transition: background-color 0.3s ease;
+    opacity: 0.6;
+}
+
+form:has(.policy-container input[type="checkbox"]:checked) input[type=submit] {
+    background-color: #45a049;
+    color: white;
+    border-color: #45a049;
+    cursor: pointer;
+    opacity: 1;
+}
+
+form:has(.policy-container input[type="checkbox"]:checked) input[type=submit]:hover {
+    background-color: #388e3c;
 }
