@@ -84,6 +84,13 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    margin-top: 100px;
+}
+
+.highlights_p {
+    padding: 40px 150px;
+    display: flex;
+    font-size: 28px;
 }
 
 .content {
@@ -95,7 +102,7 @@ h2 {
 .highlights-slider-text {
     background-color: rgba(255, 255, 255, 0.1);
     position: absolute;
-    left: 38px;
+    left: 140px;
     top: 54px;
     width: 881px;
     color: white;
@@ -238,6 +245,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    margin-top: 100px;
 }
 
 .img_faq {
@@ -338,6 +346,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 100px;
 }
 
 .contact_p {
@@ -364,6 +373,7 @@ input[type=submit]:hover {
 .row {
     display: flex;
     gap: 80px;
+    margin-top: 50px;
 
 }
 
