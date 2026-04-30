@@ -13,12 +13,27 @@
 
 .list-lorem {
     padding: 0 200px;
+    
 }
 
-.list-lorem p {
+.list-lorem p{
     margin-bottom: 24px;
     font-family: "Palanquin";
     font-size: 24px;
     font-weight: 400;
     color: #3D3D3D;
+}
+
+
+ul{
+    margin-bottom: 24px;
+    font-family: "Palanquin";
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3D;
+    padding-left: 5%;
+}
+
+ul li::marker {
+  font-size: 0.6em;
 }
