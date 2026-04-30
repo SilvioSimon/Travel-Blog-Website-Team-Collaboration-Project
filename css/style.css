@@ -490,12 +490,17 @@ form {
     height: 128px;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-left {
     display: flex;
-    margin-left: 146px;
+    align-items: center;
+    gap: 90px;
+}
+
+.footer-copyright {
+    display: flex;
     align-items: center;
 }
 
@@ -506,4 +511,20 @@ form {
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
 
+}
+
+.footer-right img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-youtube-img {
+    width: 44px;
+
+}
+
+.footer-right {
+    display: flex;
+    gap: 16px;
+    width: 44px;
 }
