@@ -339,6 +339,7 @@ textarea {
     font-family: Palanquin;
     font-size: 25px;
     resize: none;
+    line-height: 1.2;
 }
 
 
