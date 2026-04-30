@@ -275,6 +275,8 @@ details {
 }
 
 summary {
+    font-family: palanquin;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -335,6 +337,7 @@ textarea {
     outline: none;
     font-family: Palanquin;
     font-size: 25px;
+    resize: none;
 }
 
 
@@ -402,7 +405,6 @@ label {
     font-weight: 500;
     color: rgba(84, 55, 13, 1);
     display: block;
-    margin-bottom: 8px;
 }
 
 .policy-container {
@@ -428,8 +430,13 @@ label {
     text-decoration: none;
 }
 
-.policy-container a:hover {
-    text-decoration: underline;
+.policy-container label {
+    font-size: 16px;
+    font-family: 'Palanquin', Latin, sans-serif;
+    font-weight: 400;
+    display: inline;
+    color: rgba(84, 55, 13, 1);
+    cursor: pointer;
 }
 
 input[type=submit] {
@@ -450,4 +457,17 @@ form:has(.policy-container input[type="checkbox"]:checked) input[type=submit] {
 
 form:has(.policy-container input[type="checkbox"]:checked) input[type=submit]:hover {
     background-color: #388e3c;
+}
+
+form {
+    width: 84%;
+    margin: 0 auto;
+}
+
+#highlights,
+#faq,
+#contact {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
