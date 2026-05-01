@@ -116,6 +116,7 @@ h2 {
     left: 320px;
     bottom: 100px;
     width: 120px;
+    animation: banana 10s linear infinite;
 }
 
 .logo-wrapper {

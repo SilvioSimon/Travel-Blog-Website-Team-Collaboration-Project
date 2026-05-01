@@ -64,3 +64,24 @@
     --global-h5-color: rgba(78, 164, 135, 1);
     --global-h6-color: rgba(84, 55, 13, 1);
 }
+
+@keyframes banana {
+
+    0% {
+        transform: translateY(0px) rotate(0deg) scaleX(1) scaleY(1);
+    }
+
+
+    25% {
+        transform: translateY(0px) rotate(90deg) scaleX(1) scaleY(1);
+    }
+
+
+    75% {
+        transform: translateY(0px) rotate(270deg) scaleX(1) scaleY(1);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(360deg) scaleX(1) scaleY(1);
+    }
+}
