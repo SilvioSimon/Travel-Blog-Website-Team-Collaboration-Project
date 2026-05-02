@@ -1,24 +1,61 @@
 .article-lorem {
-    max-width: 1201px;
-    margin: 88px 100px;
+  max-width: 1200px;
+  margin: 88px 100px;
 }
 
 .article-lorem p {
-    text-align: start;
-    font-family: "Palanquin";
-    font-size: 24px;
-    font-weight: 400;
-    color: #3D3D3D;
+  text-align: start;
+  font-family: "Palanquin";
+  font-size: 24px;
+  font-weight: 400;
+  color: #3d3d3d;
 }
 
 .list-lorem {
-    padding: 0 200px;
+  padding: 0 200px;
 }
 
 .list-lorem p {
-    margin-bottom: 24px;
-    font-family: "Palanquin";
-    font-size: 24px;
-    font-weight: 400;
-    color: #3D3D3D;
+  margin-bottom: 24px;
+  font-family: "Palanquin";
+  font-size: 24px;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.container-video {
+  width: 930px;
+}
+
+.image-wrapper {
+  position: relative;
+  border-radius: 45px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+}
+
+.play-button {
+    height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px; /* optional */
+  cursor: pointer;
+}
+
+ul {
+  margin-bottom: 24px;
+  font-family: "Palanquin";
+  font-size: 24px;
+  font-weight: 400;
+  color: #3d3d3d;
+  padding-left: 5%;
+}
+
+ul li::marker {
+  font-size: 0.6em;
 }

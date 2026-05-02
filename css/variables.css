@@ -1,8 +1,87 @@
+@font-face {
+    font-family: 'Arima';
+    src: url('../assets/fonts/Arima/Arima-VariableFont_wght.ttf') format('truetype-variations');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Medium.ttf') format('500');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --nav-footer-bg-color: rgba(78, 164, 135, 1);
+    --global-h1-color: rgba(84, 55, 13, 1);
     --global-h2-color: rgba(78, 164, 135, 1);
     --global-h3-color: rgba(255, 255, 255, 1);
     --global-h4-color: rgba(241, 201, 83, 1);
     --global-h5-color: rgba(78, 164, 135, 1);
     --global-h6-color: rgba(84, 55, 13, 1);
+}
+
+@keyframes banana {
+
+    0% {
+        transform: translateY(0px) rotate(0deg) scaleX(1) scaleY(1);
+    }
+
+
+    25% {
+        transform: translateY(0px) rotate(90deg) scaleX(1) scaleY(1);
+    }
+
+
+    75% {
+        transform: translateY(0px) rotate(270deg) scaleX(1) scaleY(1);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(360deg) scaleX(1) scaleY(1);
+    }
 }
