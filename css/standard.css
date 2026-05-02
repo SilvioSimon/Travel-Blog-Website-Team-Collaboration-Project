@@ -125,7 +125,7 @@ h6 {
     margin-bottom: -24px;
 }
 
-.pro-tipps-button img{
+.pro-tipps-button img {
     height: 42px;
     width: 41px;
     transform: rotate(13.67deg);
@@ -146,14 +146,14 @@ h6 {
     background-color: #4EA48733;
 }
 
-.pro-tipps-tipps ol{
+.pro-tipps-tipps ol {
     font-family: "Palanquin";
     font-size: 24px;
     font-weight: 400;
     color: #3D3D3D;
 }
 
-.pro-tipps-tipps span{
+.pro-tipps-tipps span {
     color: #4EA487;
     font-weight: 700;
 }
