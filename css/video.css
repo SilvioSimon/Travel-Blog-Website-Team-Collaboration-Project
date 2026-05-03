@@ -43,7 +43,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60px; /* optional */
+  width: 60px;
   cursor: pointer;
 }
 
@@ -58,4 +58,60 @@ ul {
 
 ul li::marker {
   font-size: 0.6em;
+}
+
+
+__________
+
+.share-section {
+
+
+    padding-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.share-section-text p {
+    font-family: "Arima";
+    font-size: 24px;
+    font-weight: 500;
+    color: #54370D;
+    text-align: center;
+    max-width: 463px;
+    max-height: 58px;
+    
+}
+
+.share-section-text img{
+    height: 64px;
+    z-index: 2;
+    justify-content: flex-start;
+}
+
+button {
+  margin: 0 auto;
+    border-radius: 40px;
+    max-width: 158px;
+    max-height: 48px;
+    background-color: #4EA487;
+    padding: 8px 24px;
+    gap: 8px;
+    z-index: 1;
+
+    display: flex;
+}
+
+button img {
+    height: 32px;
+    width: 32px;
+}
+
+button p {
+    font-family: "Arima";
+    font-size: 24px;
+    font-weight: 700;
+    color: #F1C953;
 }
