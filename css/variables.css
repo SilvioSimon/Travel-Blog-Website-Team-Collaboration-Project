@@ -36,7 +36,7 @@
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Medium.ttf') format('500');
+    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
