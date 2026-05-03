@@ -17,7 +17,7 @@
     align-items: center;
 }
 
-.beach-destination img {
+.slider-radio img {
     border-radius: 16px;
     height: 440px;
     width: 300px;
@@ -99,4 +99,94 @@
     font-family: "Palanquin";
     font-size: 24px;
     font-weight: 400;
+}
+
+@media screen and (min-width: 1351px) {
+    .beach-destination input {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .beach-destination-slider:first-child {
+        all: revert;
+    }
+
+    .beach-destination-slider:hover {
+        all: revert;
+    }
+
+    .beach-destination-slider:hover~.beach-destination-slider {
+        all: revert;
+    }
+
+    .beach-destination-wrapper {
+        all: revert;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .beach-destination {
+        all: revert;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        height: 440px;
+        width: 800px;
+         overflow: hidden; 
+    }
+
+    .beach-destination input {
+        z-index: 2;
+    }
+
+    .slider {
+        display: flex;
+    }
+
+    .slider-radio img {
+        all: revert;
+        height: 440px;
+        width: 100%;
+    }
+
+    .slider-radio {
+        z-index: 1;
+        width: 500%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        transition: all 0.75s ease-in-out;
+    }
+
+    .beach-destination-slider {
+        all: revert;
+        width: calc(100% / 5) !important;
+        height: 440px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .beach-destination input[value="one"]:checked~.slider-radio {
+        transform: translateX(40%);
+    }
+
+    .beach-destination input[value="two"]:checked~.slider-radio {
+        transform: translateX(calc(100% / 5));
+    }
+
+    .beach-destination input[value="three"]:checked~.slider-radio {
+        transform: translateX(calc(0));
+    }
+
+    .beach-destination input[value="four"]:checked~.slider-radio {
+        transform: translateX(calc(-100% / 5));
+    }
+
+    .beach-destination input[value="five"]:checked~.slider-radio {
+        transform: translateX(-40%);
+    }
 }
