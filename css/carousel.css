@@ -134,9 +134,10 @@
         justify-content: center;
         align-items: flex-end;
         position: relative;
-        height: 440px;
+        height: 500px;
         width: 800px;
-         overflow: hidden; 
+        overflow: hidden;
+
     }
 
     .beach-destination input {
@@ -149,7 +150,7 @@
 
     .slider-radio img {
         all: revert;
-        height: 440px;
+        max-height: 440px !important;
         width: 100%;
     }
 
@@ -188,5 +189,35 @@
 
     .beach-destination input[value="five"]:checked~.slider-radio {
         transform: translateX(-40%);
+    }
+
+
+    .beach-destination input[type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 10px; 
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: #4EA4874D;
+        margin-bottom: 0;
+    }
+
+    .beach-destination input[type="radio"]::before {
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 0.15s ease;
+    }
+
+    .beach-destination input[type="radio"]:checked {
+        background: #4EA487;
+        margin: 10px; 
+        width: 40px;
+        height: 22px;
+        border-radius: 999px; 
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 0;
     }
 }
