@@ -67,21 +67,34 @@
 
 @keyframes banana {
 
-    0% {
+    0%,
+    0.03% {
         transform: translateY(0px) rotate(0deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
     }
 
 
-    25% {
+    25%,
+    25.03% {
         transform: translateY(0px) rotate(90deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
+    }
+
+    50%,
+    50.03% {
+        transform: translateY(0px) rotate(180deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
     }
 
 
-    75% {
+    75%,
+    75.03% {
         transform: translateY(0px) rotate(270deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
     }
 
-    100% {
+    100%,
+    100.00% {
         transform: translateY(0px) rotate(360deg) scaleX(1) scaleY(1);
     }
 }
