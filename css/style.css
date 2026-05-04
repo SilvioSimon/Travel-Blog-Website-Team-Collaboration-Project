@@ -733,9 +733,10 @@ footer img {
     .highlights-slider-text {
         left: 15px;
         top: 100px;
-        width: 345px;
+        width: 310px;
         color: white;
         padding: 16px 24px;
+        height: 46%;
     }
 
     .highlights-slider-text h3 {
