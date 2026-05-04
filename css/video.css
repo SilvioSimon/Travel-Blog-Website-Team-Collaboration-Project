@@ -31,6 +31,7 @@
   position: relative;
   border-radius: 45px;
   overflow: hidden;
+  aspect-ratio: 16 / 9;
 }
 
 .image-wrapper img {
@@ -39,6 +40,7 @@
 
 .play-button {
   height: 30%;
+  max-height: 120px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,7 +48,9 @@
 }
 
 .image-wrapper img:first-child {
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .container-video a:hover .image-wrapper img:first-child {
@@ -64,4 +68,13 @@ ul {
 
 ul li::marker {
   font-size: 0.6em;
+}
+
+@media screen and (max-width: 1040px) {
+  .image-wrapper {
+    margin: 0 auto;
+    width: clamp(280px, 80vw, 930px);
+    height: auto;
+    border-radius: 30px;
+  }
 }
