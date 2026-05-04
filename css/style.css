@@ -680,6 +680,18 @@ footer img {
         z-index: 1;
     }
 
+    .moving {
+        position: absolute;
+        background-color: green;
+        z-index: 5;
+        display: flex;
+        top: 96px;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        left: 50px;
+    }
+
     .hero-layer-shape {
         position: absolute;
         top: -280px;
@@ -692,8 +704,8 @@ footer img {
     .hero-layer-logo {
         position: absolute;
         z-index: 4;
-        left: 60px;
-        top: 98px;
+        left: 0px;
+        top: 1px;
         width: 160px;
         height: 160px;
         animation: banana 10s linear infinite;
@@ -718,6 +730,10 @@ footer img {
         font-weight: 700;
     }
 
+    .highlights-headline {
+        padding-right: 20px;
+    }
+
     .highlights-headline img {
         width: 40px;
         height: 40px;
@@ -732,7 +748,9 @@ footer img {
     }
 
     .slider-main-element img {
-        width: unset;
+        width: 100%;
+        object-fit: cover;
+        object-position: 40%;
     }
 
     .highlights-slider-text {
@@ -740,7 +758,7 @@ footer img {
         top: 100px;
         width: 266px;
         color: white;
-        height: 46%;
+        height: 35%;
     }
 
     .highlights-slider-text h3 {
@@ -750,6 +768,11 @@ footer img {
     .highlights-slider-text p {
         font-size: 20px;
         width: 240px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: auto;
     }
 
     details {
