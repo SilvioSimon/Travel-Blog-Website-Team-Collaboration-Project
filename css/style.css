@@ -699,6 +699,13 @@ footer img {
         display: none;
     }
 
+    #highlights,
+    #faq,
+    #contact {
+        width: 100%;
+        padding: 0px 16px;
+    }
+
     h2 {
         color: var(--global-h2-color);
         font-size: 40px;
@@ -713,5 +720,45 @@ footer img {
 
     .highlights_p {
         display: none;
+    }
+
+    .slider-main {
+        border-top-right-radius: 100px;
+    }
+
+    .slider-main-element img {
+        width: unset;
+    }
+
+    .highlights-slider-text {
+        left: 15px;
+        top: 100px;
+        width: 345px;
+        color: white;
+        padding: 16px 24px;
+    }
+
+    .highlights-slider-text h3 {
+        font-size: 28px;
+    }
+
+    .highlights-slider-text p {
+        font-size: 20px;
+        width: 290px;
+    }
+
+    details {
+        width: 100%;
+        margin: unset;
+        border-radius: 12px;
+    }
+
+    summary {
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .summary-img-div {
+        padding-top: 2px;
     }
 }
