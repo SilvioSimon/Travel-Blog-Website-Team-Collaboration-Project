@@ -618,6 +618,11 @@ footer img {
     align-items: center;
 }
 
+.footer-imprint-cookies {
+    display: flex;
+    gap: 24px;
+}
+
 .footer-left a {
     text-decoration: none;
     font-family: palanquin;
@@ -731,11 +736,10 @@ footer img {
     }
 
     .highlights-slider-text {
-        left: 15px;
+        left: 10px;
         top: 100px;
-        width: 310px;
+        width: 266px;
         color: white;
-        padding: 16px 24px;
         height: 46%;
     }
 
@@ -745,7 +749,7 @@ footer img {
 
     .highlights-slider-text p {
         font-size: 20px;
-        width: 290px;
+        width: 240px;
     }
 
     details {
@@ -762,4 +766,75 @@ footer img {
     .summary-img-div {
         padding-top: 2px;
     }
+
+    .contact_img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact_headline {
+        gap: 8px;
+        align-items: center;
+    }
+
+    .contact_p {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: unset;
+    }
+
+    form {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .policy-container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .policy-container input[type="checkbox"] {
+        width: 24px;
+        height: 24px;
+    }
+
+    .policy-container label {
+        font-size: 15px;
+    }
+
+    .footer-txt {
+        align-items: end;
+        justify-content: flex-start;
+        padding: 24px 24px;
+    }
+
+    .footer-left {
+        display: flex;
+        align-items: center;
+        gap: unset;
+        flex-direction: column-reverse;
+    }
+
+    .footer-imprint-cookies {
+        display: flex;
+        gap: unset;
+        flex-direction: column;
+    }
+
+    .footer-right img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-right {
+        display: flex;
+        padding-left: 15px;
+        gap: 10px;
+    }
+
 }
