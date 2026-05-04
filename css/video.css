@@ -78,3 +78,42 @@ ul li::marker {
     border-radius: 30px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .article-lorem p {
+    font-size: 16px;
+    margin-top: -30px;
+  }
+
+  .list-lorem p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .list-lorem li {
+    font-size: 16px;
+  }
+
+  .short-lorem {
+    padding-top: 32px;
+  }
+
+  .list-lorem span {
+    
+    font-size: 16px;
+  }
+
+  .article-lorem-two p {
+    
+    font-size: 16px;
+  }
+
+  ul {
+    padding: 32px;
+    font-size: 16px;
+  }
+
+  ul li::marker {
+    font-size: 0.6em;
+  }
+}

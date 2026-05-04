@@ -291,23 +291,6 @@
 }
 
 @media screen and (max-width:500px) {
-    .beach-destination-wrapper p {
-        font-size: 20px;
-        font-weight: 600;
-        margin: 40px 64px 16px;
-    }
-
-    .beach-destination input[type="radio"] {
-        display: block;
-        position: relative;
-        top: -30px;
-    }
-
-    .beach-destination input[type="radio"]:checked {
-        top: -30px
-    }
-
-
     .article-lorem p {
         font-size: 16px;
         margin-top: -30px;
