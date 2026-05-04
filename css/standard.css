@@ -143,6 +143,7 @@ h6 {
     z-index: 1;
     margin-left: 47px;
     padding: 26px 16px;
+    margin-bottom: 32px;
     border-radius: 30px;
     background-color: #4EA48733;
 }
@@ -166,6 +167,7 @@ h6 {
     max-width: 493px;
     max-height: 154px;
     margin-bottom: 88px;
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
