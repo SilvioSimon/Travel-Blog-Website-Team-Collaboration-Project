@@ -7,8 +7,8 @@
     font-size: 32px;
     font-weight: 600;
     color: #54370D;
-    margin: 88px 64px;
     text-align: center;
+    margin: 88px 64px;
 }
 
 .beach-destination {
@@ -137,7 +137,7 @@
         height: 500px;
         width: 800px;
         overflow: hidden;
-
+        border-radius: 16px;
     }
 
     .beach-destination input {
@@ -150,9 +150,13 @@
 
     .slider-radio img {
         all: revert;
-        max-height: 440px !important;
+        height: 440px !important;
         width: 100%;
+        object-fit: cover;
+        border-radius: 16px !important;
+        box-shadow: -9px 5px 20px 0px #00000040;
     }
+
 
     .slider-radio {
         z-index: 1;
@@ -169,6 +173,8 @@
         height: 440px;
         justify-content: center;
         align-items: center;
+        object-fit: cover;
+        border-radius: 16px;
     }
 
     .beach-destination input[value="one"]:checked~.slider-radio {
@@ -191,11 +197,10 @@
         transform: translateX(-40%);
     }
 
-
     .beach-destination input[type="radio"] {
         -webkit-appearance: none;
         appearance: none;
-        margin: 10px; 
+        margin: 10px;
         width: 22px;
         height: 22px;
         border-radius: 50%;
@@ -212,12 +217,214 @@
 
     .beach-destination input[type="radio"]:checked {
         background: #4EA487;
-        margin: 10px; 
+        margin: 10px;
         width: 40px;
         height: 22px;
-        border-radius: 999px; 
+        border-radius: 999px;
         cursor: pointer;
         display: flex;
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .beach-destination-wrapper p {
+        margin: 40px 64px;
+    }
+
+    .article-lorem {
+        width: 100%;
+        margin: 40px 100px;
+    }
+
+    .article-lorem-two {
+        margin: 40px 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:875px) {
+    .article-lorem {
+        margin: 40px 0 0 0;
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    .list-lorem {
+        margin: 40px 0;
+        padding: 0 50px;
+        width: 100%;
+    }
+
+    .article-lorem-two {
+        margin: 40px 0;
+        padding: 0 50px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:875px) {
+    .beach-destination {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .article-lorem {
+        margin: 40px 0 0 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .list-lorem {
+        margin: 40px 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .article-lorem-two {
+        margin: 40px 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .beach-destination-wrapper p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 40px 64px 16px;
+    }
+
+    .beach-destination input[type="radio"] {
+        display: block;
+        position: relative;
+        top: -30px;
+    }
+
+    .beach-destination input[type="radio"]:checked {
+        top: -30px
+    }
+
+
+    .article-lorem p {
+        font-size: 16px;
+        margin-top: -30px;
+    }
+
+    .list-lorem p {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .list-lorem li {
+        font-size: 16px;
+    }
+
+    .list-lorem span {
+        font-size: 16px;
+    }
+
+    .article-lorem-two p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .beach-destination-wrapper {
+        margin: 0 20px;
+        width: 100%;
+    }
+
+    .beach-destination {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        height: 340px;
+        width: 42.7%;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
+    .slider-radio img {
+        all: revert;
+        height: 293px !important;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px !important;
+        box-shadow: -9px 5px 20px 0px #00000040;
+    }
+
+
+    .slider-radio {
+        z-index: 1;
+        width: 500%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        transition: all 0.75s ease-in-out;
+    }
+
+    .beach-destination-slider {
+        all: revert;
+        width: calc(100% / 5) !important;
+        height: 440px;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .beach-destination input[value="one"]:checked~.slider-radio {
+        transform: translateX(40%);
+    }
+
+    .beach-destination input[value="two"]:checked~.slider-radio {
+        transform: translateX(calc(100% / 5));
+    }
+
+    .beach-destination input[value="three"]:checked~.slider-radio {
+        transform: translateX(calc(0));
+    }
+
+    .beach-destination input[value="four"]:checked~.slider-radio {
+        transform: translateX(calc(-100% / 5));
+    }
+
+    .beach-destination input[value="five"]:checked~.slider-radio {
+        transform: translateX(-40%);
+    }
+
+    .beach-destination input[type="radio"] {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 10px;
+        width: 51px;
+        height: 22px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: #4EA4874D;
+        margin-bottom: 0;
+        z-index: 3;
+    }
+
+    .beach-destination input[type="radio"]::before {
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 0.15s ease;
+    }
+
+    .beach-destination input[type="radio"]:checked {
+        background: #4EA487;
+        margin: 10px;
+        width: 93px;
+        height: 22px;
+        border-radius: 999px;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 0;
+        z-index: 3;
     }
 }
