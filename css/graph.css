@@ -1,0 +1,12 @@
+.article-lorem {
+  max-width: 1200px;
+  margin: 88px 100px;
+}
+
+.article-lorem p {
+  text-align: start;
+  font-family: "Palanquin";
+  font-size: 24px;
+  font-weight: 400;
+  color: #3d3d3d;
+}

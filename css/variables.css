@@ -98,3 +98,63 @@
         transform: translateY(0px) rotate(360deg) scaleX(1) scaleY(1);
     }
 }
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 100px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+@keyframes layer_text {
+    from {
+        left: 50%;
+        transform: translate(-50%, 100px);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        left: 50px;
+        transform: translate(0, -50%);
+
+    }
+}
+
+@keyframes moveToSide {
+    from {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    to {
+        left: 50px;
+        transform: translate(0, -50%);
+    }
+}
+
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(188%);
+
+    }
+
+    to {
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

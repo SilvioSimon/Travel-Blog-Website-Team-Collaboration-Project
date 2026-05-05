@@ -1,6 +1,6 @@
 .article-lorem {
-  max-width: 1200px;
-  margin: 88px 100px;
+    max-width: 1201px;
+    margin: 88px 100px;
 }
 
 .article-lorem p {
@@ -63,7 +63,7 @@ ul {
   font-size: 24px;
   font-weight: 400;
   color: #3d3d3d;
-  padding-left: 5%;
+  padding-left: 3rem;
 }
 
 ul li::marker {
