@@ -103,13 +103,13 @@
     from {
         opacity: 0;
         transform: translate(-50%, 100px);
-        /* Startet unter der Mitte */
+
     }
 
     to {
         opacity: 1;
         transform: translate(-50%, -50%);
-        /* Endet genau mittig */
+
     }
 }
 
@@ -124,7 +124,7 @@
         opacity: 1;
         left: 50px;
         transform: translate(0, -50%);
-        /* Endposition links */
+
     }
 }
 
@@ -144,12 +144,12 @@
 @keyframes slideInRight {
     from {
         transform: translateX(188%);
-        /* Startet komplett außerhalb rechts */
+
     }
 
     to {
         transform: translateX(0);
-        /* Endet an seiner Originalposition */
+
     }
 }
 
