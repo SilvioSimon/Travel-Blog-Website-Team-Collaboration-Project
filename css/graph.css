@@ -36,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   max-width: 1200px;
   width: 100%;
   gap: 30px;
@@ -46,7 +46,7 @@
 }
 
 .graph-2-3>div {
-  flex: 0 0 calc(50%- 15px);
+  flex: 0 0 calc(50% - 15px);
   display: flex;
   flex-direction: column;
   min-width: 300px;
@@ -57,12 +57,14 @@
   display: flex;
   text-align: center;
   justify-content: center;
+
 }
 
 .graph-3-headline {
   display: flex;
   text-align: center;
   justify-content: center;
+
 }
 
 .graph-2-lorem {}
@@ -76,6 +78,8 @@
 
 .graph-2-3 img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 53px;
   height: auto;
   margin-top: auto;
