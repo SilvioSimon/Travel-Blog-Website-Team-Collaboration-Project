@@ -200,7 +200,7 @@
     position: absolute;
     bottom: 12px;
     z-index: 10;
-    transform: translateX(-50%); /* ← immer um Mittelpunkt zentriert */
+    transform: translateX(-50%);
   }
 
   #s1 { left: calc(50% - 100px); }
@@ -240,7 +240,6 @@
 
   .beach-destination-slider:first-child { margin-left: 0; }
 
-  /* Alle Karten: Standard links-schräg */
   .beach-destination-slider img {
     width: 220px;
     height: 340px;
@@ -252,7 +251,6 @@
     pointer-events: none;
   }
 
-  /* Kein Hover */
   .beach-destination-slider:hover img {
     transform: perspective(750px) rotateY(18deg) translateX(-10px);
     box-shadow: -9px 5px 20px 0px #00000040;
