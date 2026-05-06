@@ -434,9 +434,28 @@ button p {
 }
 
 @media screen and (max-width:380px) {
+.hero-section-layout{
+    margin: calc(80px + 24px) 0 0;
+    padding: 0 10px;
+}
+
     .author-card {
         flex-direction: column;
         gap: 16px;
         margin-top: 24px;
+    }
+
+    .pro-tipps{
+        margin: 40px 0 0 0;
+        padding: 0 10px;
+    }
+
+    .pro-tipps-tipps{
+        margin: 10px 0 0;
+        padding: 24px 0;
+    }
+
+    .share-section{
+        margin: 20px 0 40px;
     }
 }
