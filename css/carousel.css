@@ -1,6 +1,8 @@
 .beach-destination-wrapper {
-    margin: 0 50px;
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .beach-destination-wrapper p {
@@ -29,7 +31,7 @@
     display: flex;
     justify-content: center;
     height: 440px;
-    width: 1300px;
+    width: 100%;
 }
 
 .slider-radio img {
@@ -480,4 +482,77 @@
 
 
 
-} */
+} */ 
+
+/* (Copy old CSS -SILS)
+.beach-destination-wrapper {
+    margin: 0 50px;
+    width: 1240px;
+}
+
+.beach-destination-wrapper p {
+    font-family: "Arima";
+    font-size: 32px;
+    font-weight: 600;
+    color: #54370D;
+    text-align: center;
+    margin: 88px 0 64px;
+    padding: 0 64px;
+}
+
+.beach-destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 538px;
+    padding: 0 64px;
+}
+
+.beach-destination input {
+    display: none;
+}
+
+.slider-radio {
+    display: flex;
+    justify-content: center;
+    height: 440px;
+    width: 1300px;
+}
+
+.slider-radio img {
+    z-index: 1;
+    max-height: 440px;
+    max-width: 300px;
+    border-radius: 16px;
+    box-shadow: -9px 5px 20px 0px #00000040;
+    transform: perspective(750px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
+    transition: all 250ms ease-in-out;
+}
+
+.beach-destination-slider:hover {
+    z-index: 2;
+    transform: perspective(750px) rotateY(0) translateX(0);
+    width: 300px;
+    height: 440px;
+    transform-origin: 50% 50%;
+}
+
+.beach-destination-slider:hover~.beach-destination-slider {
+    transform: perspective(750px) rotateY(-20deg) translateX(20px);
+
+}
+
+.beach-destination-slider~.beach-destination-slider {
+    margin-left: -180px;
+}
+
+.beach-destination-slider:hover+.beach-destination-slider {
+    margin-left: 0px;
+}
+
+.beach-destination-slider:has(+ .beach-destination-slider:hover) {
+    margin-right: 180px;
+}
+ /*
+
