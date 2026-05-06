@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    /* background-image: url(./assets/img/yellow-background-color.png);
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: 100%; */
+
+    margin: 128px 0 0 0;
+    height: 540px;
+    width: 1440px;
+    z-index: 0;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+
+}
+
+.hero>div {
+    grid-area: overlay;
+    width: 1440px;
+    position: relative;
+}
+
+.hero-layer-text {
+    z-index: 6;
+    height: 515px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    animation: move-left 1s 4s ease-in-out forwards;
+}
+
+.hero-layer-text h1 {
+    width: 345px;
+
+    font-family: "Arima";
+    font-size: 60px;
+    font-weight: 700;
+    color: #54370d;
+    text-align: flex-start;
+
+    display: flex;
+    overflow: hidden;
+    transform: translateY(0%);
+
+    animation: move-h1 1s ease-in-out forwards;
+}
+
+@keyframes move-h1 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes move-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-425px);
+    }
+}
+
+
+.hero-layer-text p {
+    width: 345px;
+
+    font-family: "Palanquin";
+    font-size: 28px;
+    font-weight: 500;
+    color: #54370d;
+
+
+    text-align: flex-start;
+    display: flex;
+
+
+    animation: appear-p 1s ease-in-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+@keyframes appear-p {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.yellow-card img {
+    z-index: 2;
+    height: 515px;
+    width: 1440px;
+
+
+    display: grid;
+    opacity: 1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    animation: card 3s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+@keyframes card {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.hero-layer-photo img {
+    z-index: 1;
+    height: 515px;
+    width: 1440px;
+
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-layer-first-wave img {
+    z-index: 3;
+    height: 515px;
+    width: 942px;
+
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    overflow: hidden;
+
+
+    animation: first-wave 5s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+@keyframes first-wave {
+    0% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+.hero-layer-second-wave img {
+    z-index: 4;
+    height: 540px;
+    width: 647px;
+
+    display: flex;
+    opacity: 1;
+    position: relative;
+    overflow: visible;
+
+    animation: 4s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+
+.moving {
+    display: flex;
+    opacity: 0;
+}
+
+.hero-layer-logo {
+    z-index: 5;
+
+}
+
+.flag {
+    z-index: 5;
+}
