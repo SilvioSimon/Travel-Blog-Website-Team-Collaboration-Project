@@ -1,6 +1,6 @@
 .article-lorem {
   max-width: 1200px;
-  margin: 88px 100px;
+  margin: 88px 0px;
 }
 
 .article-lorem p {
@@ -9,4 +9,56 @@
   font-size: 24px;
   font-weight: 400;
   color: #3d3d3d;
+  line-height: 120%;
+}
+
+.graph-1-headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+
+  padding-bottom: 24px;
+}
+
+.rain-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+
+
+}
+
+.graph-2-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 30px;
+
+}
+
+.graph-2-3>div {
+  flex: 0 0 calc(50%- 15px);
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 585px;
+}
+
+.graph-2-3>article {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.graph-2-3 img {
+  width: 100%;
+  border-radius: 53px;
+  height: auto;
+  margin-top: auto;
 }
