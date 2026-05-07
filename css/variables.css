@@ -63,6 +63,10 @@
     --global-h4-color: rgba(241, 201, 83, 1);
     --global-h5-color: rgba(78, 164, 135, 1);
     --global-h6-color: rgba(84, 55, 13, 1);
+    --font-heading-h1: 'Arima', sans-serif;
+    --font-heading-h2: 'Arima', sans-serif;
+    --font-heading-h3: 'Palanquin', sans-serif;
+
 }
 
 @keyframes banana {
