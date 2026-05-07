@@ -1039,8 +1039,8 @@ footer img {
 
     .footer-right {
         display: flex;
-        justify-content: center;
-        padding-left: 80px;
+        justify-content: space-around;
+        padding-left: 40px;
         gap: 10px;
         width: 100%;
     }
