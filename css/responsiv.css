@@ -101,6 +101,7 @@
 
     .slider-main {
         border-top-right-radius: 100px;
+        width: 100%;
     }
 
     .slider-main-element img {
@@ -118,7 +119,7 @@
     }
 
     .highlights-slider-text h3 {
-        font-size: 28px;
+        font-size: 25px;
     }
 
     .highlights-slider-text p {
