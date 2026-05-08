@@ -117,78 +117,156 @@ h3 {
 
 
 .hero {
-    height: 515px;
-    background-image: url(../assets/img/herobackground1.svg);
-    width: 100%;
-    margin-top: 128px;
-    position: relative;
+    /* background-image: url(./assets/img/yellow-background-color.png);
+    background-position: start;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
+    background-size: 100%; */
+
+    margin: 128px 0 0 0;
+    height: 515px;
+    width: 1440px;
+    z-index: 0;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas: "content";
+
+    animation: grow-hero 0.5s ease-in-out forwards;
+    animation-delay: 6s;
+
 }
 
-
-.hero img {
-    position: absolute;
-    display: block;
-}
-
-.hero-layer-photo {
-    z-index: 1;
-    right: 0;
-    top: 0;
-    height: 100%;
+.hero>div {
+    grid-area: overlay;
+    width: 1440px;
+    position: relative;
+    grid-area: content;
     width: 100%;
-    object-fit: cover;
-    object-position: right;
-
+    height: 100%;
+    position: relative;
 }
-
-
-.hero-layer-shape {
-    z-index: 2;
-    left: 0;
-    top: 0;
-    height: 104%;
-    width: 45%;
-    position: absolute;
-}
-
-
 
 .hero-layer-text {
-    position: absolute;
     z-index: 6;
-    left: 50px;
-    top: 20%;
-    width: 350px;
-    color: var(--global-h1-color);
-    font-family: Arima;
-    font-size: 30px;
-    font-weight: bold;
+    height: 515px;
+
     display: flex;
     flex-direction: column;
-    text-align: left;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
+    animation: move-left 1s 4s ease-in-out forwards;
+}
+
+.hero-layer-text h1 {
+    width: 345px;
+    color: var(--global-h1-color);
+    font-family: "Arima";
+    font-size: 60px;
+    font-weight: 700;
+
+    text-align: flex-start;
+
+    display: flex;
+    overflow: hidden;
+    transform: translateY(0%);
+
+    animation: move-h1 1s ease-in-out forwards;
 }
 
 .hero-layer-text p {
-    font-family: Palanquin;
+    width: 345px;
+
+    font-family: "Palanquin";
     font-size: 28px;
     font-weight: 500;
-    text-align: left;
+    color: #54370d;
 
+
+    text-align: flex-start;
+    display: flex;
+
+
+    animation: appear-p 1s ease-in-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
+.yellow-card img {
+    z-index: 2;
+    height: 515px;
+    width: 1440px;
+
+
+    display: grid;
+    opacity: 1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+
+    animation: card 3s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+.hero-layer-photo img {
+    z-index: 1;
+    height: 515px;
+    width: 1440px;
+
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-layer-first-wave img {
+    z-index: 3;
+    height: 515px;
+    width: 942px;
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    overflow: hidden;
+    animation: first-wave 3s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+.hero-layer-second-wave {
+
+    height: 545px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hero-layer-second-wave img {
+    z-index: 4;
+    height: 545px;
+    width: auto;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    overflow: visible;
+    display: block;
+    animation: second-wave-in 1.5s ease-in-out forwards;
+    animation-delay: 2.9s;
+}
 
 .hero-layer-logo {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     display: block;
     position: relative;
     z-index: 4;
     left: 25px;
-    top: 25px;
+    top: 0px;
     animation: banana 9000ms ease-in infinite;
 }
 
@@ -205,22 +283,168 @@ h3 {
 
 .flag {
     display: flex;
-    left: 67px;
-    top: 67px;
+    left: -70px;
+    top: 0px;
+    position: relative;
 }
 
-.moving {
+
+
+.hero div.moving {
+    position: absolute;
     top: 256px;
-    left: 430px;
-    display: flex;
-    background-color: rgba(78, 164, 135, 1);
+    left: 420px;
     width: 180px;
     height: 180px;
-    z-index: 4;
-    position: absolute;
+    background-color: rgba(78, 164, 135, 1);
     border-radius: 50%;
-
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: moving-in 1s ease-in-out forwards;
+    animation-delay: 5.9s;
+    overflow: hidden;
 }
+
+@keyframes grow-hero {
+
+
+    to {
+        height: 545px;
+    }
+}
+
+@keyframes move-h1 {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes move-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-480px);
+    }
+}
+
+@keyframes appear-p {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes card {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes first-wave {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    99% {
+
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+}
+
+@keyframes second-wave-in {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-125%);
+        opacity: 1;
+    }
+}
+
+@keyframes moving-in {
+    from {
+        transform: translateY(100px);
+
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(0);
+
+        opacity: 1;
+    }
+}
+
+@keyframes banana {
+
+    0%,
+    0.03% {
+        transform: translateY(0px) rotate(0deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
+    }
+
+
+    25%,
+    25.03% {
+        transform: translateY(0px) rotate(90deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
+    }
+
+    50%,
+    50.03% {
+        transform: translateY(0px) rotate(180deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
+    }
+
+
+    75%,
+    75.03% {
+        transform: translateY(0px) rotate(270deg) scaleX(1) scaleY(1);
+        animation-timing-function: ease-in;
+    }
+
+    100%,
+    100.00% {
+        transform: translateY(0px) rotate(360deg) scaleX(1) scaleY(1);
+    }
+}
+
+@keyframes moving {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 main>section {
     width: 100%;
