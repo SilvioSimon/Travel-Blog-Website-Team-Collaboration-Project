@@ -217,18 +217,18 @@
         position: absolute;
         overflow: visible;
         display: block;
-        animation: second-wave-in 1s ease-in-out forwards;
+        animation: second-wave-in 1.5s ease-in-out forwards;
         animation-delay: 2.9s;
     }
 
 
     @keyframes second-wave-in {
-        from {
+        0% {
             transform: translateX(100%);
-            opacity: 0;
+            opacity: 1;
         }
 
-        to {
+        100% {
             transform: translateX(-125%);
             opacity: 1;
         }
@@ -284,14 +284,15 @@
         align-items: center;
         opacity: 0;
         animation: moving-in 1s ease-in-out forwards;
-        animation-delay: 5.7s;
+        animation-delay: 5.9s;
+        overflow: hidden;
     }
 
     @keyframes moving-in {
         from {
             transform: translateY(100px);
 
-            opacity: 0;
+            opacity: 1;
         }
 
         to {
