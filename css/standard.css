@@ -164,9 +164,9 @@ h6 {
 }
 
 .share-section {
-    max-width: 493px;
-    max-height: 154px;
-    margin-bottom: 88px;
+    width: 493px;
+    height: 154px;
+    margin-bottom: 88px !important;
     margin-top: 16px;
     display: flex;
     flex-direction: column;
@@ -186,19 +186,25 @@ h6 {
 .groß-img img {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: -40px;
 }
 
 .klein-img img {
     display: none;
 }
 
-button {
-    border-radius: 40px;
+button{
+    background: none;
     border: none;
-    max-width: 158px;
-    max-height: 48px;
+}
+
+.share-button {
+     border-radius: 40px;
+    border: none;
+    width: 158px;
+    height: 48px;
     background-color: #4EA487;
-    margin-top: -40px;
+    margin-top: 0px;
     padding: 24px;
     gap: 8px;
 
@@ -206,20 +212,22 @@ button {
     justify-content: left;
     display: flex;
     outline: none;
-    position: relative;
+    transition: all 0.3s ease-in-out;
+    
 }
 
-button img {
+.share-button img {
     height: 32px;
     width: 32px;
     left: 15px;
 }
 
-button p {
+.share-button p {
     font-family: "Arima";
     font-size: 24px;
     font-weight: 700;
     color: #F1C953;
+
 }
 
 .share-option-container {
@@ -228,11 +236,9 @@ button p {
     align-items: center;
     width: 220px;
     height: 54px;
-    position: absolute;
     gap: 10px;
     display: none;
 }
-
 
 .share-option-container img {
     display: block;
@@ -240,12 +246,24 @@ button p {
     width: 32px;
 }
 
-.share-section:focus-within button>img {
+button:focus-within{
+    display: flex;
+    justify-content: center;
+    width: 273px;
+}
+
+.share-section:focus-within .share-button>img {
     display: none;
 }
 
 .share-section:focus-within .share-option-container {
     display: flex;
+}
+
+.share-section:focus-within .share-button {
+    width: auto;
+    justify-content: center;
+
 }
 
 .share-option-options {
@@ -361,7 +379,7 @@ button p {
     }
 }
 
-@media screen and (max-width:490px) {
+@media screen and (max-width:544px) {
     .share-section {
         width: 100%;
         padding: 0 20px;
@@ -378,10 +396,6 @@ button p {
 
     .share-section-text p {
         margin-bottom: 20px;
-    }
-
-    button {
-        margin-top: -20px;
     }
 }
 
@@ -433,11 +447,17 @@ button p {
     }
 }
 
-@media screen and (max-width:380px) {
-.hero-section-layout{
-    margin: calc(80px + 24px) 0 0;
-    padding: 0 10px;
+@media screen and (max-width:400px) {
+    .share-section {
+        margin: 20px 0 40px;
+    }
 }
+
+@media screen and (max-width:380px) {
+    .hero-section-layout {
+        margin: calc(80px + 24px) 0 0;
+        padding: 0 10px;
+    }
 
     .author-card {
         flex-direction: column;
@@ -445,17 +465,13 @@ button p {
         margin-top: 24px;
     }
 
-    .pro-tipps{
+    .pro-tipps {
         margin: 40px 0 0 0;
         padding: 0 10px;
     }
 
-    .pro-tipps-tipps{
+    .pro-tipps-tipps {
         margin: 10px 0 0;
         padding: 24px 0;
-    }
-
-    .share-section{
-        margin: 20px 0 40px;
     }
 }
