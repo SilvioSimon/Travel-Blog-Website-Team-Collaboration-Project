@@ -57,7 +57,7 @@
   transform: scale(1.05);
 }
 
-ul {
+.article-list {
   margin-bottom: 24px;
   font-family: "Palanquin";
   font-size: 24px;
