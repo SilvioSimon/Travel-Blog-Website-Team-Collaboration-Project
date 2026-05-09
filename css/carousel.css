@@ -382,6 +382,11 @@
 }
 
 @media screen and (max-width: 500px) {
+   .beach-title {
+    font-size: 20px;
+    margin: 32px 0 0 0px !important;
+  }
+  
   .article-lorem p {
     font-size: 16px;
     margin-top: 0;
