@@ -61,11 +61,11 @@
 
     .hero-layer-text h1 {
         width: 345px;
-
+        color: var(--global-h1-color);
         font-family: "Arima";
         font-size: 60px;
         font-weight: 700;
-        color: #54370d;
+
         text-align: flex-start;
 
         display: flex;
@@ -217,7 +217,7 @@
         position: absolute;
         overflow: visible;
         display: block;
-        animation: second-wave-in 1s ease-in-out forwards;
+        animation: second-wave-in 1.5s ease-in-out forwards;
         animation-delay: 2.9s;
     }
 
@@ -297,14 +297,13 @@
         opacity: 0;
         animation: moving-in 1s ease-in-out forwards;
         animation-delay: 5.7s;
-        overflow: hidden;
     }
 
     @keyframes moving-in {
         from {
-            transform: translateX(100px);
-             transform: translateY(100px);
-            opacity: 1;
+            transform: translateY(100px);
+
+            opacity: 0;
         }
 
         to {

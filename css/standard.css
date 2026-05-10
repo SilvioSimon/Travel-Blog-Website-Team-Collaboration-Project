@@ -397,6 +397,12 @@ button:focus-within{
     .share-section-text p {
         margin-bottom: 20px;
     }
+
+        .author-card {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+    }
 }
 
 @media screen and (max-width:500px) {

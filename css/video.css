@@ -1,6 +1,7 @@
 .article-lorem {
-    max-width: 1201px;
-    margin: 88px 100px;
+  width: 100%;
+  max-width: 800px;
+  padding: 64px 20px;
 }
 
 .article-lorem p {
@@ -57,7 +58,7 @@
   transform: scale(1.05);
 }
 
-ul {
+.article-list {
   margin-bottom: 24px;
   font-family: "Palanquin";
   font-size: 24px;
@@ -73,7 +74,7 @@ ul li::marker {
 @media screen and (max-width: 1040px) {
   .image-wrapper {
     margin: 0 auto;
-    width: clamp(280px, 80vw, 930px);
+    width: clamp(280px, 90vw, 930px);
     height: auto;
     border-radius: 30px;
   }
@@ -99,16 +100,14 @@ ul li::marker {
   }
 
   .list-lorem span {
-    
     font-size: 16px;
   }
 
   .article-lorem-two p {
-    
     font-size: 16px;
   }
 
-  ul {
+  .article-list {
     padding: 32px;
     font-size: 16px;
   }
