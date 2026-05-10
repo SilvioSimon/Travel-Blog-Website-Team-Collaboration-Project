@@ -28,8 +28,6 @@
     }
 
     @keyframes grow-hero {
-
-
         to {
             height: 545px;
         }
@@ -198,7 +196,6 @@
 
 
     .hero-layer-second-wave {
-
         height: 545px;
         position: absolute;
         bottom: 0;
@@ -249,8 +246,6 @@
         }
     }
 
-
-
     .hero-layer-logo {
         width: 140px;
         height: 140px;
@@ -280,8 +275,6 @@
         position: relative;
     }
 
-
-
     .hero div.moving {
         position: absolute;
         top: 256px;
@@ -308,7 +301,7 @@
 
         to {
             transform: translateY(0);
-            transform: translateX(0); 
+            transform: translateX(0);
             opacity: 1;
         }
     }
@@ -358,6 +351,107 @@
             opacity: 1;
         }
     }
+
+    .yellow-card-mobil {
+        display: none;
+    }
+
+    .yellow-card-mobil-groß {
+        display: none;
+    }
+
+
+
+    @media screen and (min-width:320px) {
+        .hero {
+            animation: none;
+
+            height: 533px;
+            width: 100%;
+        }
+
+        .hero-layer-text {
+            animation: none;
+        }
+
+        .hero-layer-text h1 {
+            animation: none;
+        }
+
+        .hero-layer-text p {
+            animation: none;
+        }
+
+        .yellow-card img {
+            display: none;
+        }
+
+        .hero-layer-photo img {
+            display: none;
+        }
+
+        .hero-layer-first-wave img {
+            display: none;
+        }
+
+        .hero-layer-second-wave img {
+            display: none;
+        }
+
+        .yellow-card-mobil {
+            display: flex;
+        }
+
+        .yellow-card-mobil img {
+            height: 299px;
+            width: 222px;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            transform: scale(5);
+            transform-origin: top left;
+            animation: verkleinern 1s forwards;
+        }
+
+        .yellow-card-mobil-groß {
+            display: flex;
+            top: 0;
+            left: 0;
+        }
+
+        .yellow-card-mobil-groß img {
+            height: 482px;
+            width: 375px;
+            z-index: 1;
+            animation: wave-weg 1s forwards;
+            animation-delay: 3s;
+             transform-origin: top left;
+        }
+
+        @keyframes wave-weg {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(0);
+            }
+        }
+    }
+
+    @keyframes verkleinern {
+        from {
+            transform: scale(5);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .background-color {
+        background-color: turquoise;
+    }
 </style>
 
 <body>
@@ -365,6 +459,12 @@
         <div class="hero-layer-text">
             <h1>Cappadocia</h1>
             <p>From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.</p>
+        </div>
+        <div class="yellow-card-mobil">
+            <img src="assets/img/mobil-yellow-wave-small.png" alt="Gelber Hintergrund für 320px">
+        </div>
+        <div class="yellow-card-mobil-groß">
+            <img src="assets/img/mobil-yellow-wave-big.png" alt="Big yellow wave">
         </div>
         <div class="yellow-card">
             <img src="assets/img/yellow-background-color.png" alt="Gelber Hintergrund">
@@ -383,12 +483,10 @@
                 alt="Schriftzug Cappadocia und Türkei">
             <img class="flag" src="assets/icons/Flag_orb_Turkey 2.svg" alt="Flagge der Türkei">
         </div>
-        </div>
     </section>
-</body>
+    <div class="background-color">
 
-</html>
-
+    </div>
 </body>
 
 </html>
