@@ -15,7 +15,8 @@
 
         margin: 128px 0 0 0;
         height: 515px;
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
         z-index: 0;
         position: relative;
         display: grid;
@@ -152,7 +153,8 @@
     .hero-layer-photo img {
         z-index: 1;
         height: 515px;
-        width: 1440px;
+       max-width: 1440px;
+       width: 100%;
 
         display: flex;
         opacity: 1;
@@ -165,7 +167,8 @@
     .hero-layer-first-wave img {
         z-index: 3;
         height: 515px;
-        width: 942px;
+        max-width: 942px;
+        width: 100%;
 
         display: flex;
         opacity: 1;
@@ -404,6 +407,7 @@
             display: flex;
             z-index: -1;
             height: 515px;
+            width: 1440px;
 
             opacity: 1;
             position: absolute;
@@ -558,7 +562,7 @@ transform: scale(5);
 transform-origin: top left;
 animation: verkleinern 1s forwards;
 }
-dia screen and (min-width: 320px) and (max-width: 480px) {
+media screen and (min-width: 320px) and (max-width: 480px) {
 .yellow-card-mobil-groß img {
 height: 488px;
 width: 375px;
@@ -609,7 +613,7 @@ justify-content: center;
 align-items: center;
 opacity: 0;
 animation: tada 1s ease-in-out forwards;
-animation-delay: 5.7s;
+animation-delay: 5.7s;}
 
 .hero-layer-logo {
 width: 80px;
@@ -619,11 +623,11 @@ position: relative;
 z-index: 4;
 left: 15px;
 top: 0px;
-animation: banana 9000ms ease-in infinite;
+animation: banana 9000ms ease-in infinite;}
 .flag {
 display: flex;
 left: -39px;
 top: 0px;
 position: relative;
 width: 30px;
-height: 30px;
+height: 30px;}
