@@ -84,6 +84,6 @@
 
   .article-lorem p {
     line-height: 100%;
-    font-size: 16px;        /* ← p auf 16px */
+    font-size: 16px;
   }
 }
