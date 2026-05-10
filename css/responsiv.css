@@ -200,7 +200,11 @@
         align-items: end;
         justify-content: flex-start;
         padding-bottom: 24px;
-        width: 100%
+        width: 100%;
+        padding-top: unset;
+        padding-left: unset;
+        padding-right: unset;
+        padding-left: 16px;
     }
 
     .footer-left {
@@ -227,6 +231,7 @@
         padding-left: 15px;
         gap: 10px;
         width: 100%;
+        padding-right: unset;
     }
 
     .mobile-navbar {
@@ -328,7 +333,11 @@
         align-items: end;
         justify-content: flex-start;
         padding-bottom: 24px;
-        width: 100%
+        width: 100%;
+        padding-top: unset;
+        padding-left: unset;
+        padding-right: unset;
+        padding-left: 16px;
     }
 
     .footer-left {
@@ -464,13 +473,17 @@
     }
 
     .footer-txt {
-
+        padding-top: unset;
+        padding-right: unset;
         justify-content: start;
+        padding-left: unset;
+        padding-bottom: unset;
     }
 
     .footer-left {
         gap: 30px;
         padding-left: 40px;
+
     }
 
     .footer-right {
