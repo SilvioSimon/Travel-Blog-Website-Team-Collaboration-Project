@@ -122,7 +122,7 @@
         }
     }
 
-    .yellow-card img {
+    /* .yellow-card img {
         z-index: 2;
         height: 515px;
         width: 1440px;
@@ -147,7 +147,7 @@
         to {
             transform: translateX(-100%);
         }
-    }
+    } */
 
     .hero-layer-photo img {
         z-index: 1;
@@ -173,24 +173,22 @@
         overflow: hidden;
 
 
-        animation: first-wave 3s ease-in-out forwards;
-        animation-delay: 3s;
+        animation: first-wave 1s ease-in-out forwards;
+        animation-delay: 5.9s;
+        transform: scale(1);
+        transform-origin: left;
     }
 
     @keyframes first-wave {
         0% {
-            transform: translateX(100%);
+            transform: scaleX(1);
             opacity: 1;
         }
 
-        99% {
-
-            opacity: 1;
-        }
 
         100% {
-            transform: translateX(-5%);
-            opacity: 0;
+            transform: scaleX(0);
+            opacity: 1;
         }
     }
 
@@ -205,46 +203,30 @@
     .hero-layer-second-wave img {
         z-index: 4;
         height: 545px;
-        width: auto;
+        width: 647px;
         bottom: 0;
-        right: 0;
         top: 0;
         display: flex;
-        opacity: 0;
+        opacity: 1;
         position: absolute;
-        overflow: visible;
-        display: block;
-        animation: second-wave-in 1.5s ease-in-out forwards;
-        animation-delay: 2.9s;
+        overflow: hidden;
+        animation: second-wave-in 2s ease-in-out forwards;
+        animation-delay: 3s;
+        transform: scale(3);
+        transform-origin: left;
     }
 
 
     @keyframes second-wave-in {
-        0% {
-            transform: translateX(100%);
-            opacity: 1;
+        from {
+            transform: scaleX(3);
         }
 
-        20% {
-            transform: translateX(50%);
-            opacity: 1;
-        }
-
-        40% {
-            transform: translateX(0%);
-            opacity: 1;
-        }
-
-        60% {
-            transform: translateX(62.5%);
-            opacity: 1;
-        }
-
-        100% {
-            transform: translateX(-125%);
-            opacity: 1;
+        to {
+            transform: scaleX(1);
         }
     }
+
 
     .hero-layer-logo {
         width: 140px;
@@ -362,7 +344,7 @@
 
 
 
-    @media screen and (min-width:320px) {
+    @media screen and (min-width:320px) and (max-width:480px) {
         .hero {
             animation: none;
 
@@ -371,15 +353,47 @@
         }
 
         .hero-layer-text {
-            animation: none;
+            padding: 0 0 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+
+            animation: text-weg 1s forwards;
+            animation-delay: 2s;
         }
 
         .hero-layer-text h1 {
             animation: none;
+            width: 261px;
+            height: 43px;
+            font-size: 40px;
+
+            display: flex;
+            overflow: hidden;
+            transform: translateY(0%);
         }
 
         .hero-layer-text p {
             animation: none;
+            width: 261px;
+            height: 101px;
+            font-size: 20px;
+            opacity: 1;
+
+            text-align: flex-start;
+            display: flex;
+        }
+
+        @keyframes text-weg {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
         }
 
         .yellow-card img {
@@ -387,7 +401,28 @@
         }
 
         .hero-layer-photo img {
-            display: none;
+            display: flex;
+            z-index: -1;
+            height: 515px;
+
+            opacity: 1;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transform-origin: top right;
+            animation: photo-slide 1s forwards;
+            animation-delay: 0;
+        }
+
+        @keyframes photo-slide {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-46%);
+            }
         }
 
         .hero-layer-first-wave img {
@@ -425,7 +460,7 @@
             z-index: 1;
             animation: wave-weg 1s forwards;
             animation-delay: 3s;
-             transform-origin: top left;
+            transform-origin: top left;
         }
 
         @keyframes wave-weg {
@@ -437,20 +472,46 @@
                 transform: scale(0);
             }
         }
-    }
 
-    @keyframes verkleinern {
-        from {
-            transform: scale(5);
+
+
+        @keyframes verkleinern {
+            from {
+                transform: scale(5);
+            }
+
+            to {
+                transform: scale(1);
+            }
+
         }
 
-        to {
-            transform: scale(1);
+        .hero div.moving {
+            position: absolute;
+            top: 121px;
+            left: 71px;
+            width: 180px;
+            height: 180px;
+            background-color: rgba(78, 164, 135, 1);
+            border-radius: 50%;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: tada 1s ease-in-out forwards;
+            animation-delay: 5.7s;
         }
-    }
 
-    .background-color {
-        background-color: turquoise;
+        @keyframes tada {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
     }
 </style>
 
@@ -484,9 +545,85 @@
             <img class="flag" src="assets/icons/Flag_orb_Turkey 2.svg" alt="Flagge der Türkei">
         </div>
     </section>
-    <div class="background-color">
-
-    </div>
 </body>
 
 </html>
+.yellow-card-mobil img {
+height: 182px;
+width: 220px;
+z-index: 0;
+top: 0;
+left: 0;
+transform: scale(5);
+transform-origin: top left;
+animation: verkleinern 1s forwards;
+}
+dia screen and (min-width: 320px) and (max-width: 480px) {
+.yellow-card-mobil-groß img {
+height: 488px;
+width: 375px;
+z-index: 1;
+animation: wave-weg 1s forwards;
+animation-delay: 3s;
+transform-origin: top left;
+media screen and (min-width: 320px) and (max-width: 480px) {
+.hero-layer-photo img {
+display: flex;
+z-index: -1;
+height: 330px;
+opacity: 1;
+position: absolute;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+transform-origin: top right;
+animation: photo-slide 1s forwards;
+animation-delay: 0;
+width: 290%;
+object-fit: cover;
+}
+.hero-layer-first-wave img {
+z-index: 3;
+height: 499px;
+width: 942px;
+display: flex;
+opacity: 1;
+position: absolute;
+overflow: hidden;
+animation: first-wave 1s ease-in-out forwards;
+animation-delay: 5.9s;
+transform: scale(1);
+transform-origin: left;
+}
+.hero div.moving {
+position: absolute;
+top: 67px;
+left: 90px;
+width: 100px;
+height: 100px;
+background-color: rgba(78, 164, 135, 1);
+border-radius: 50%;
+z-index: 10;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+animation: tada 1s ease-in-out forwards;
+animation-delay: 5.7s;
+
+.hero-layer-logo {
+width: 80px;
+height: 80px;
+display: block;
+position: relative;
+z-index: 4;
+left: 15px;
+top: 0px;
+animation: banana 9000ms ease-in infinite;
+.flag {
+display: flex;
+left: -39px;
+top: 0px;
+position: relative;
+width: 30px;
+height: 30px;
