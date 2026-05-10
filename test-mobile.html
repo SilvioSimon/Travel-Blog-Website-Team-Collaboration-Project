@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+    }
     .hero {
         /* background-image: url(./assets/img/yellow-background-color.png);
     background-position: start;
@@ -48,6 +53,9 @@
     .hero-layer-text {
         z-index: 6;
         height: 515px;
+        width: 100%;
+        max-width: 1440px;
+        
 
         display: flex;
         flex-direction: column;
@@ -66,7 +74,6 @@
         font-weight: 700;
 
         text-align: flex-start;
-
         display: flex;
         overflow: hidden;
         transform: translateY(0%);
