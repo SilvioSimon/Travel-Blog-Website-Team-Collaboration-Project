@@ -715,7 +715,8 @@ footer img {
     height: 128px;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 60px 120px;
 }
 
 .footer-left {
@@ -757,6 +758,7 @@ footer img {
     display: flex;
     gap: 16px;
     width: 44px;
+    padding-right: 120px;
 }
 
 .mobile-navbar {

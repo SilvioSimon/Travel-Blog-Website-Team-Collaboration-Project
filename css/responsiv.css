@@ -103,7 +103,7 @@
 
     .slider-main {
         border-top-right-radius: 100px;
-        width: 100%;
+        width: calc(100% - 16px);
     }
 
     .slider-main-element img {
@@ -424,7 +424,7 @@
     .highlights-slider-text {
         left: 20px;
         top: 100px;
-        width: calc(100% - 0px);
+        width: calc(100% - 70px);
         ;
         color: white;
         height: auto;
@@ -477,4 +477,37 @@
         gap: 16px;
         padding-left: 120px;
     }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    #highlights,
+    #faq,
+    #contact {
+        /* width: 100%; */
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0px 32px;
+    }
+
+    .slider-main {
+        position: relative;
+        width: 1220px;
+        height: 533px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        width: calc(100% - 25px);
+    }
+
+    .faq {
+        width: calc(100% - 30px);
+    }
+
+    details {
+        margin-left: 0px;
+        width: calc(100% - -30px);
+    }
+
 }
