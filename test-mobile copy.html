@@ -20,7 +20,8 @@
 
         margin: 128px 0 0 0;
         height: 515px;
-        width: 1440px;
+        width: 100%;
+        max-width: 1440px;
         z-index: 0;
         position: relative;
         display: grid;
@@ -51,14 +52,16 @@
 
     .hero-layer-text {
         z-index: 6;
-        height: 515px;
+        width: 100dvw !important;
 
+        padding-left: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
+        overflow: none;
 
+        transform-origin: center center;
         animation: move-left 1s 4s ease-in-out forwards;
     }
 
@@ -88,6 +91,7 @@
         }
     }
 
+    /* 
     @keyframes move-left {
         from {
             transform: translateX(0);
@@ -96,11 +100,12 @@
         to {
             transform: translateX(-480px);
         }
-    }
+    } */
 
 
     .hero-layer-text p {
-        width: 345px;
+        max-width: 345px;
+        width: 50%;
 
         font-family: "Palanquin";
         font-size: 28px;
@@ -127,37 +132,11 @@
         }
     }
 
-    /* .yellow-card img {
-        z-index: 2;
-        height: 515px;
-        width: 1440px;
-
-
-        display: grid;
-        opacity: 1;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        overflow: visible;
-
-        animation: card 3s ease-in-out forwards;
-        animation-delay: 3s;
-    }
-
-    @keyframes card {
-        from {
-            transform: translateX(0%);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
-    } */
-
     .hero-layer-photo img {
         z-index: 1;
         height: 515px;
-        width: 1440px;
+        max-width: 1440px;
+        width: 100%;
 
         display: flex;
         opacity: 1;
@@ -420,6 +399,7 @@
             animation-delay: 0;
         }
 
+
         @keyframes photo-slide {
             from {
                 transform: translateX(0%);
@@ -478,8 +458,6 @@
             }
         }
 
-
-
         @keyframes verkleinern {
             from {
                 transform: scale(5);
@@ -518,6 +496,105 @@
             }
         }
     }
+
+    @media screen and (max-width:1440px) {
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-480px);
+            }
+        }
+    }
+
+    @media screen and (min-width:1340px) and (max-width:1439px) {
+        .hero-layer-text {
+            transform-origin: center center;
+            animation: move-left 1s 4s ease-in-out forwards;
+        }
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-33%);
+            }
+        }
+    }
+
+       @media screen and (min-width:1140px) and (max-width:1339px) {
+        .hero-layer-text {
+            transform-origin: center center;
+            animation: move-left 1s 4s ease-in-out forwards;
+        }
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-30%);
+            }
+        }
+    }
+
+
+       @media screen and (min-width:940px) and (max-width:1139px) {
+        .hero-layer-text {
+            transform-origin: center center;
+            animation: move-left 1s 4s ease-in-out forwards;
+        }
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-25%);
+            }
+        }
+    }
+
+       @media screen and (min-width:840px) and (max-width:939px) {
+        .hero-layer-text {
+            transform-origin: center center;
+            animation: move-left 1s 4s ease-in-out forwards;
+        }
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-25%);
+            }
+        }
+    }
+
+       @media screen and (min-width:740px) and (max-width:839px) {
+        .hero-layer-text {
+            transform-origin: center center;
+            animation: move-left 1s 4s ease-in-out forwards;
+        }
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-20%);
+            }
+        }
+    }
 </style>
 
 <body>
@@ -553,82 +630,3 @@
 </body>
 
 </html>
-.yellow-card-mobil img {
-height: 182px;
-width: 220px;
-z-index: 0;
-top: 0;
-left: 0;
-transform: scale(5);
-transform-origin: top left;
-animation: verkleinern 1s forwards;
-}
-dia screen and (min-width: 320px) and (max-width: 480px) {
-.yellow-card-mobil-groß img {
-height: 488px;
-width: 375px;
-z-index: 1;
-animation: wave-weg 1s forwards;
-animation-delay: 3s;
-transform-origin: top left;
-media screen and (min-width: 320px) and (max-width: 480px) {
-.hero-layer-photo img {
-display: flex;
-z-index: -1;
-height: 330px;
-opacity: 1;
-position: absolute;
-justify-content: center;
-align-items: center;
-overflow: hidden;
-transform-origin: top right;
-animation: photo-slide 1s forwards;
-animation-delay: 0;
-width: 290%;
-object-fit: cover;
-}
-.hero-layer-first-wave img {
-z-index: 3;
-height: 499px;
-width: 942px;
-display: flex;
-opacity: 1;
-position: absolute;
-overflow: hidden;
-animation: first-wave 1s ease-in-out forwards;
-animation-delay: 5.9s;
-transform: scale(1);
-transform-origin: left;
-}
-.hero div.moving {
-position: absolute;
-top: 67px;
-left: 90px;
-width: 100px;
-height: 100px;
-background-color: rgba(78, 164, 135, 1);
-border-radius: 50%;
-z-index: 10;
-display: flex;
-justify-content: center;
-align-items: center;
-opacity: 0;
-animation: tada 1s ease-in-out forwards;
-animation-delay: 5.7s;
-
-.hero-layer-logo {
-width: 80px;
-height: 80px;
-display: block;
-position: relative;
-z-index: 4;
-left: 15px;
-top: 0px;
-animation: banana 9000ms ease-in infinite;
-.flag {
-display: flex;
-left: -39px;
-top: 0px;
-position: relative;
-width: 30px;
-height: 30px;
