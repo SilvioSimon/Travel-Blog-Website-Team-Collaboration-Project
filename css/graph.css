@@ -1,5 +1,4 @@
 .article-lorem {
-  max-width: 1200px;
   margin: 88px 100px;
 }
 
@@ -19,7 +18,6 @@
   text-align: center;
   max-width: 1200px;
   width: 100%;
-
   padding-bottom: 24px;
 }
 
@@ -70,7 +68,7 @@
 .graph-2-3 > article {
   flex: 0 0 100%;
   width: 100%;
-  padding: 0 64px;
+  padding: 0 100px;
 }
 
 .graph-2-3 img {
@@ -83,38 +81,71 @@
 }
 
 @media screen and (max-width: 1100px) {
-.graph-2-headline,
-.graph-3-headline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .graph-2-headline,
+  .graph-3-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .article-lorem {
-  margin: 64px 100px;
-}
+    margin: 64px 64px;
+  }
 }
 
 @media screen and (max-width: 910px) {
   .graph-2-3 > div {
-     flex: 0 0 100%;
-     max-width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .graph-2-3 img {
-    max-width: 100%;
     padding: 0 64px;
+  }
+
+  .rain-graph img {
+    padding: 0 64px;
+  }
+
+  .graph-2-3 > div:nth-child(2) {
+    margin-top: 128px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .rain-graph img {
-    max-width: 650px;
-    padding: 0 128px;
+    max-width: 100%;
+    padding: 0 64px;
   }
 
   .article-lorem {
     max-width: 1200px;
+  }
+
+  .article-lorem p {
+    margin: 0px 0;
+  }
+
+  .article-lorem {
+    margin: 48px 32px;
+  }
+
+  .graph-2-3 {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .graph-2-3 > article {
+    padding: 0 32px;
+  }
+
+  .graph-2-3 img,
+  .rain-graph img {
+    padding: 0 32px;
+  }
+
+  .graph-2-3 > div:nth-child(2) {
+    margin-top: 64px;
   }
 }
 
@@ -133,5 +164,9 @@
   .title-h6 {
     font-size: 24px;
     font-weight: 600;
+  }
+
+   .graph-2-3 > div:nth-child(2) {
+    margin-top: 32px;
   }
 }
