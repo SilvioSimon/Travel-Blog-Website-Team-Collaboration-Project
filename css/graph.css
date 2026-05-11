@@ -1,3 +1,9 @@
+/*
+* {
+  outline: 1px solid red;
+}
+*/
+
 .article-lorem {
   margin: 88px 100px;
 }
@@ -109,6 +115,10 @@
 
   .graph-2-3 > div:nth-child(2) {
     margin-top: 128px;
+  }
+
+  .article-lorem {
+    margin: 64px 64px;
   }
 }
 
