@@ -30,6 +30,11 @@
   max-width: 1200px;
 }
 
+.title-h6 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
 .graph-2-3 {
   display: flex;
   flex-wrap: wrap;
@@ -65,6 +70,7 @@
 .graph-2-3 > article {
   flex: 0 0 100%;
   width: 100%;
+  padding: 0 64px;
 }
 
 .graph-2-3 img {
@@ -76,21 +82,41 @@
   margin-top: auto;
 }
 
-@media screen and (max-width: 700px) {
-.rain-graph img {
-  max-width: 100%;
-  padding: 0 32px;
+@media screen and (max-width: 1100px) {
+.graph-2-headline,
+.graph-3-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.article-lorem {
-    max-width: 1200px;
-    padding: 0 50px;
-    width: 100%;
+  .article-lorem {
+  margin: 64px 100px;
+}
+}
+
+@media screen and (max-width: 910px) {
+  .graph-2-3 > div {
+     flex: 0 0 100%;
+     max-width: 100%;
   }
 
-
+  .graph-2-3 img {
+    max-width: 100%;
+    padding: 0 64px;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .rain-graph img {
+    max-width: 650px;
+    padding: 0 128px;
+  }
+
+  .article-lorem {
+    max-width: 1200px;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .article-lorem {
@@ -102,5 +128,10 @@
   .article-lorem p {
     line-height: 100%;
     font-size: 16px;
+  }
+
+  .title-h6 {
+    font-size: 24px;
+    font-weight: 600;
   }
 }
