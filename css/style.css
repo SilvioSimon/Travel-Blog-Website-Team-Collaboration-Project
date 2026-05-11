@@ -588,6 +588,7 @@ input[type=submit]:hover {
     justify-content: center;
     gap: 15px;
     margin-top: 100px;
+    align-items: center;
 }
 
 .contact_p {
@@ -1253,6 +1254,29 @@ footer img {
 
     .footer-right {
         gap: 16px;
-        padding-left: 120px;
+        padding-left: unset;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (min-width:1281px) {
+    details {
+        width: 100%;
+        margin-left: unset;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .policy-container label {
+        font-size: 24px;
+    }
+
+    .policy-container input[type="checkbox"] {
+        margin-right: 10px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
     }
 }
