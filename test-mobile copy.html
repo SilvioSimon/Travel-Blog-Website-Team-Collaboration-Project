@@ -326,177 +326,6 @@
         display: none;
     }
 
-
-
-    @media screen and (min-width:320px) and (max-width:480px) {
-        .hero {
-            animation: none;
-
-            height: 533px;
-            width: 100%;
-        }
-
-        .hero-layer-text {
-            padding: 0 0 0 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            overflow: hidden;
-
-            animation: text-weg 1s forwards;
-            animation-delay: 2s;
-        }
-
-        .hero-layer-text h1 {
-            animation: none;
-            width: 261px;
-            height: 43px;
-            font-size: 40px;
-
-            display: flex;
-            overflow: hidden;
-            transform: translateY(0%);
-        }
-
-        .hero-layer-text p {
-            animation: none;
-            width: 261px;
-            height: 101px;
-            font-size: 20px;
-            opacity: 1;
-
-            text-align: flex-start;
-            display: flex;
-        }
-
-        @keyframes text-weg {
-            from {
-                opacity: 1;
-            }
-
-            to {
-                opacity: 0;
-            }
-        }
-
-        .yellow-card img {
-            display: none;
-        }
-
-        .hero-layer-photo img {
-            display: flex;
-            z-index: -1;
-            height: 515px;
-
-            opacity: 1;
-            position: absolute;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            transform-origin: top right;
-            animation: photo-slide 1s forwards;
-            animation-delay: 0;
-        }
-
-
-        @keyframes photo-slide {
-            from {
-                transform: translateX(0%);
-            }
-
-            to {
-                transform: translateX(-46%);
-            }
-        }
-
-        .hero-layer-first-wave img {
-            display: none;
-        }
-
-        .hero-layer-second-wave img {
-            display: none;
-        }
-
-        .yellow-card-mobil {
-            display: flex;
-        }
-
-        .yellow-card-mobil img {
-            height: 299px;
-            width: 222px;
-            z-index: 0;
-            top: 0;
-            left: 0;
-            transform: scale(5);
-            transform-origin: top left;
-            animation: verkleinern 1s forwards;
-        }
-
-        .yellow-card-mobil-groß {
-            display: flex;
-            top: 0;
-            left: 0;
-        }
-
-        .yellow-card-mobil-groß img {
-            height: 482px;
-            width: 375px;
-            z-index: 1;
-            animation: wave-weg 1s forwards;
-            animation-delay: 3s;
-            transform-origin: top left;
-        }
-
-        @keyframes wave-weg {
-            from {
-                transform: scale(1);
-            }
-
-            to {
-                transform: scale(0);
-            }
-        }
-
-        @keyframes verkleinern {
-            from {
-                transform: scale(5);
-            }
-
-            to {
-                transform: scale(1);
-            }
-
-        }
-
-        .hero div.moving {
-            position: absolute;
-            top: 121px;
-            left: 71px;
-            width: 180px;
-            height: 180px;
-            background-color: rgba(78, 164, 135, 1);
-            border-radius: 50%;
-            z-index: 10;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            animation: tada 1s ease-in-out forwards;
-            animation-delay: 5.7s;
-        }
-
-        @keyframes tada {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-    }
-
     @media screen and (max-width:1440px) {
 
         @keyframes move-left {
@@ -593,6 +422,196 @@
             to {
                 transform: translateX(-20%);
             }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:739px) {
+        .hero {
+            animation: none;
+
+            height: 533px;
+            width: 100%;
+        }
+
+        .hero-layer-text {
+            padding: 0 0 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            overflow: hidden;
+
+            animation: text-weg 1s forwards;
+            animation-delay: 2s;
+        }
+
+        .hero-layer-text h1 {
+            animation: none;
+            width: 261px;
+            height: 43px;
+            font-size: 40px;
+
+            display: flex;
+            overflow: hidden;
+            transform: translateY(0%);
+        }
+
+        .hero-layer-text p {
+            animation: none;
+            width: 261px;
+            height: 101px;
+            font-size: 20px;
+            opacity: 1;
+
+            text-align: flex-start;
+            display: flex;
+        }
+
+        @keyframes text-weg {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        .yellow-card img {
+            display: none;
+        }
+
+        .hero-layer-photo img {
+            display: flex;
+            z-index: -1;
+            height: 515px;
+            width: 1440px;
+
+            opacity: 1;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transform-origin: top right;
+            animation: photo-slide 1s forwards;
+            animation-delay: 0;
+        }
+
+        @keyframes photo-slide {
+            from {
+                transform: translateX(0%);
+            }
+
+            to {
+                transform: translateX(-46%);
+            }
+        }
+
+        .hero-layer-first-wave img {
+            display: none;
+        }
+
+        .hero-layer-second-wave img {
+            display: none;
+        }
+
+        .yellow-card-mobil {
+            display: flex;
+        }
+
+        .yellow-card-mobil img {
+            height: 280px;
+
+            width: 230px;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            transform: scale(5);
+            transform-origin: top left;
+            animation: verkleinern 1s forwards;
+        }
+
+        .yellow-card-mobil-groß {
+            display: flex;
+            top: 0;
+            left: 0;
+        }
+
+        .yellow-card-mobil-groß img {
+            height: 482px;
+            width: 375px;
+            z-index: 1;
+            animation: wave-weg 1s forwards;
+            animation-delay: 3s;
+            transform-origin: top left;
+        }
+
+        @keyframes wave-weg {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes verkleinern {
+            from {
+                transform: scale(5);
+            }
+
+            to {
+                transform: scale(1);
+            }
+
+        }
+
+        .hero div.moving {
+            position: absolute;
+            top: 105px;
+            left: 70px;
+            width: 160px;
+            height: 160px;
+            background-color: rgba(78, 164, 135, 1);
+            border-radius: 50%;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            animation: tada 1s ease-in-out forwards;
+            animation-delay: 2.7s;
+        }
+
+        @keyframes tada {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hero-layer-logo {
+            width: 130px;
+            height: 130px;
+            display: block;
+            position: relative;
+            z-index: 4;
+            left: 25px;
+            top: 0px;
+            animation: banana 9000ms ease-in infinite;
+        }
+
+        .flag {
+            display: flex;
+            left: -66px;
+            top: 0px;
+            position: relative;
+            width: 50px;
+            height: 50px;
         }
     }
 </style>
