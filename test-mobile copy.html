@@ -7,11 +7,6 @@
     <title>Document</title>
 </head>
 <style>
-
-    *{
-        box-sizing: border-box;
-        margin: 0;
-    }
     .hero {
         /* background-image: url(./assets/img/yellow-background-color.png);
     background-position: start;
@@ -20,11 +15,7 @@
 
         margin: 128px 0 0 0;
         height: 515px;
-<<<<<<< HEAD
-=======
-        max-width: 1440px;
->>>>>>> 9c448a0d57423e035f78dbd404c20efa5f9aa1e1
-        width: 100%;
+        width: 1440px;
         z-index: 0;
         position: relative;
         display: grid;
@@ -44,7 +35,7 @@
 
     .hero>div {
         grid-area: overlay;
-        width: 1440px;
+        
         position: relative;
         grid-area: content;
         width: 100%;
@@ -56,8 +47,6 @@
     .hero-layer-text {
         z-index: 6;
         height: 515px;
-        width: 100%;
-        
 
         display: flex;
         flex-direction: column;
@@ -76,6 +65,7 @@
         font-weight: 700;
 
         text-align: flex-start;
+
         display: flex;
         overflow: hidden;
         transform: translateY(0%);
@@ -159,42 +149,23 @@
         }
     } */
 
-<<<<<<< HEAD
-.hero-layer-photo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 515px;
-    overflow: hidden;   /* ← das schneidet ab */
-}
-=======
     .hero-layer-photo img {
         z-index: 1;
         height: 515px;
-       max-width: 1440px;
-       width: 100%;
->>>>>>> 9c448a0d57423e035f78dbd404c20efa5f9aa1e1
+        width: 1440px;
 
-
-.hero-layer-photo img {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 515px;
-    display: block;
-    object-fit: cover;
-    object-position: center top;
-    clip-path: inset(0);   /* ← schneidet alles ab was rausläuft */
-}
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
 
     .hero-layer-first-wave img {
         z-index: 3;
         height: 515px;
-        max-width: 942px;
-        width: 100%;
+        width: 942px;
 
         display: flex;
         opacity: 1;
@@ -290,8 +261,8 @@
         position: absolute;
         top: 256px;
         left: 420px;
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
         background-color: rgba(78, 164, 135, 1);
         border-radius: 50%;
         z-index: 10;
@@ -433,7 +404,6 @@
             display: flex;
             z-index: -1;
             height: 515px;
-            width: 1440px;
 
             opacity: 1;
             position: absolute;
@@ -468,12 +438,8 @@
         }
 
         .yellow-card-mobil img {
-            height: 280px;
-<<<<<<< HEAD
+            height: 299px;
             width: 222px;
-=======
-            width: 230px;
->>>>>>> 444069d6adb6b994ffc737e05bd389c4b906c9c5
             z-index: 0;
             top: 0;
             left: 0;
@@ -522,10 +488,10 @@
 
         .hero div.moving {
             position: absolute;
-            top: 105px;
-            left: 70px;
-            width: 160px;
-            height: 160px;
+            top: 121px;
+            left: 71px;
+            width: 180px;
+            height: 180px;
             background-color: rgba(78, 164, 135, 1);
             border-radius: 50%;
             z-index: 10;
@@ -534,7 +500,7 @@
             align-items: center;
             opacity: 0;
             animation: tada 1s ease-in-out forwards;
-            animation-delay: 2.7s;
+            animation-delay: 5.7s;
         }
 
         @keyframes tada {
@@ -545,26 +511,6 @@
             to {
                 opacity: 1;
             }
-        }
-
-        .hero-layer-logo {
-            width: 130px;
-            height: 130px;
-            display: block;
-            position: relative;
-            z-index: 4;
-            left: 25px;
-            top: 0px;
-            animation: banana 9000ms ease-in infinite;
-        }
-
-        .flag {
-            display: flex;
-            left: -66px;
-            top: 0px;
-            position: relative;
-            width: 50px;
-            height: 50px;
         }
     }
 </style>
@@ -612,7 +558,7 @@ transform: scale(5);
 transform-origin: top left;
 animation: verkleinern 1s forwards;
 }
-media screen and (min-width: 320px) and (max-width: 480px) {
+dia screen and (min-width: 320px) and (max-width: 480px) {
 .yellow-card-mobil-groß img {
 height: 488px;
 width: 375px;
@@ -663,7 +609,7 @@ justify-content: center;
 align-items: center;
 opacity: 0;
 animation: tada 1s ease-in-out forwards;
-animation-delay: 5.7s;}
+animation-delay: 5.7s;
 
 .hero-layer-logo {
 width: 80px;
@@ -673,11 +619,11 @@ position: relative;
 z-index: 4;
 left: 15px;
 top: 0px;
-animation: banana 9000ms ease-in infinite;}
+animation: banana 9000ms ease-in infinite;
 .flag {
 display: flex;
 left: -39px;
 top: 0px;
 position: relative;
 width: 30px;
-height: 30px;}
+height: 30px;
