@@ -14,27 +14,7 @@ body {
     flex-direction: column;
 }
 
-h1 {
-    color: var(--global-h1-color);
-    font-size: 64px;
-    font-family: var(--font-heading-h1);
-    font-weight: 700;
-}
 
-h2 {
-    color: var(--global-h2-color);
-    font-size: 48px;
-    font-family: var(--font-heading-h2);
-    font-weight: 700;
-    padding-top: 6px;
-}
-
-h3 {
-    color: var(--global-h3-color);
-    font-size: 32px;
-    font-family: var(--font-heading-h3);
-    font-weight: 600;
-}
 
 .header {
     display: flex;
