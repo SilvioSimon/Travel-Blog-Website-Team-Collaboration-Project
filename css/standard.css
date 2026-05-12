@@ -130,8 +130,6 @@ h6 {
     color: rgba(241, 201, 83, 1);
 }
 
-
-
 .hero-section-layout {
     margin: 208px auto 0;
     display: flex;
@@ -160,6 +158,7 @@ h6 {
     font-size: 16px;
     font-weight: 400;
     color: #54370D;
+    line-height: 120%;
 }
 
 .article-info img {
