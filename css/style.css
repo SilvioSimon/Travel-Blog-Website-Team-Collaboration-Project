@@ -947,12 +947,12 @@ footer img {
         width: 24px;
         height: 24px;
     }
-}
 
-.footer-txt {
-    width: 100%;
-    padding-left: calc((50% - 720px) + 108px);
-    padding-right: calc((50% - 720px) + 160px);
+    .footer-txt {
+        width: 100%;
+        padding-left: calc((50% - 720px) + 108px);
+        padding-right: calc((50% - 720px) + 160px);
+    }
 }
 
 .hero {
