@@ -596,6 +596,8 @@ footer img {
     .header {
         height: 80px;
         margin: unset;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     .header-navbar {
@@ -794,7 +796,9 @@ footer img {
     .header {
         height: 80px;
         margin: unset;
-        width: 100%
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 
     .header-navbar {
@@ -1046,6 +1050,12 @@ footer img {
         width: 24px;
         height: 24px;
     }
+}
+
+.footer-txt {
+    width: 100%;
+    padding-left: calc((50% - 720px) + 108px);
+    padding-right: calc((50% - 720px) + 160px);
 }
 
 .hero {
