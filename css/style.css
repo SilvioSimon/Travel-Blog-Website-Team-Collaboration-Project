@@ -345,7 +345,7 @@ details[open] summary {
     padding-bottom: 5px;
 }
 
-HEAD summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
 }
 
@@ -698,7 +698,7 @@ footer img {
     .contact_headline {
         gap: 8px;
         align-items: center;
-        width: 102%;
+        width: 100%;
         justify-content: center;
         margin-top: unset;
     }
@@ -838,7 +838,6 @@ footer img {
         left: 20px;
         top: 100px;
         width: calc(100% - 40px);
-        ;
         color: white;
         height: auto;
     }
