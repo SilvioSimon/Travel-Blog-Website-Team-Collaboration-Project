@@ -50,6 +50,27 @@ h6 {
     color: var(--global-h6-color);
 }
 
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 128px;
+    position: absolute;
+    background-color: var(--nav-footer-bg-color);
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: row;
+    align-items: center;
+    gap: 102px;
+    margin-left: 146px;
+}
+
 .navbar a {
     text-decoration: none;
     color: rgba(248, 245, 235, 1);
