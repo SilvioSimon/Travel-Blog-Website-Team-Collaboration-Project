@@ -8,49 +8,49 @@
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Thin.ttf') format('truetype');
+    src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-ExtraLight.ttf') format('truetype');
+    src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Light.ttf') format('truetype');
+    src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Medium.ttf') format('truetype');
+    src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-SemiBold.ttf') format('truetype');
+    src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Palanquin';
-    src: url('../assets/fonts/Arima/Palanquin/Palanquin-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
