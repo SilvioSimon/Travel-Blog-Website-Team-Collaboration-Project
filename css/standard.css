@@ -471,12 +471,12 @@ footer img {
     }
 
     .author-card {
-        flex-direction: row;
-        width: 100%;
-        margin-top: 40px;
-        justify-content: center;
-        gap: 40px;
-    }
+    flex-direction: row;
+    width: 100%;       
+    margin-top: 40px;
+    justify-content: center;
+    gap: 40px;
+  }
 
     .author-bio {
         width: 65ch;
@@ -510,7 +510,7 @@ footer img {
     }
 }
 
-@media screen and (max-width:875px) {
+@media screen and (max-width:932px) {
     .hero-section-layout {
         width: 100%;
         margin-top: 168px;
@@ -522,8 +522,10 @@ footer img {
     }
 
     .author-card {
-        width: 100%;
-    }
+    flex-direction: row;     
+    justify-content: center;
+    gap: 40px;
+  }
 
     .author-bio {
         width: 100%;
