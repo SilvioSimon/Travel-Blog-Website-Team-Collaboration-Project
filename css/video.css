@@ -79,6 +79,12 @@ ul li::marker {
   line-height: 120%;
 }
 
+@media screen and (max-width: 1280px) {
+  .article-lorem {
+    padding: 0px 32px;
+  }
+}
+
 @media screen and (max-width: 1040px) {
   .image-wrapper {
     border-radius: 30px;
@@ -87,6 +93,11 @@ ul li::marker {
   .container-video {
     padding: 0 32px;
   }
+
+  .article-lorem {
+    margin: 0 132px;
+  }
+
 }
 
 @media screen and (max-width: 479px) {
