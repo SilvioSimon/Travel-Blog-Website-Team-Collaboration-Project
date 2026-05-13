@@ -31,7 +31,10 @@
 }
 
 .container-video {
-  width: 930px;
+  width: 100%;
+  max-width: 930px;
+  padding: 0 64px;
+  box-sizing: border-box;
 }
 
 .image-wrapper {
@@ -55,9 +58,7 @@
 }
 
 .image-wrapper img:first-child {
-  transition:
-    transform 0.3s ease,
-    filter 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .container-video a:hover .image-wrapper img:first-child {
@@ -79,9 +80,6 @@ ul li::marker {
 
 @media screen and (max-width: 1040px) {
   .image-wrapper {
-    margin: 0 auto;
-    width: clamp(280px, 90vw, 930px);
-    height: auto;
     border-radius: 30px;
   }
 }

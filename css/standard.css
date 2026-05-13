@@ -130,8 +130,6 @@ h6 {
     color: rgba(241, 201, 83, 1);
 }
 
-
-
 .hero-section-layout {
     margin: 208px auto 0;
     display: flex;
@@ -160,6 +158,7 @@ h6 {
     font-size: 16px;
     font-weight: 400;
     color: #54370D;
+    line-height: 120%;
 }
 
 .article-info img {
@@ -471,12 +470,12 @@ footer img {
     }
 
     .author-card {
-        flex-direction: row;
-        width: 100%;
-        margin-top: 40px;
-        justify-content: center;
-        gap: 40px;
-    }
+    flex-direction: row;
+    width: 100%;       
+    margin-top: 40px;
+    justify-content: center;
+    gap: 40px;
+  }
 
     .author-bio {
         width: 65ch;
@@ -510,7 +509,7 @@ footer img {
     }
 }
 
-@media screen and (max-width:875px) {
+@media screen and (max-width:932px) {
     .hero-section-layout {
         width: 100%;
         margin-top: 168px;
@@ -522,8 +521,10 @@ footer img {
     }
 
     .author-card {
-        width: 100%;
-    }
+    flex-direction: row;     
+    justify-content: center;
+    gap: 40px;
+  }
 
     .author-bio {
         width: 100%;

@@ -674,6 +674,10 @@ footer img {
         margin: unset;
     }
 
+    .hero {
+        margin: 80px 0 0 0;
+    }
+
     .navbar {
         display: none;
     }
@@ -875,6 +879,10 @@ footer img {
         margin: unset;
     }
 
+    .hero {
+        margin: 80px 0 0 0;
+    }
+
     .navbar {
         display: none;
     }
@@ -928,7 +936,6 @@ footer img {
     details {
         width: 100%;
         margin: unset;
-
     }
 
     .contact_headline {
