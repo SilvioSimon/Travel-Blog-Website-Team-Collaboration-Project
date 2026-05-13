@@ -865,13 +865,9 @@ footer img {
         justify-content: space-around;
         align-items: center;
         z-index: 9999;
-
-       /*
-       Braucht nicht: Weil figma die runden Ecken nicht braucht.
-
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        */
+
     }
 
     .mobile-menu img {
