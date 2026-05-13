@@ -46,13 +46,7 @@
     src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
-<<<<<<< HEAD
-    font-weight: 400;
-    src: url('../assets/fonts/palanquin/palanquin-v17-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-=======
     font-display: swap;
->>>>>>> 7d0898b5dfeb00fe9a2baae70c4e9414cb95c1a7
 }
 
 @font-face {
@@ -83,20 +77,14 @@
     font-family: 'Palanquin';
     src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-Medium.ttf') format('truetype');
     font-weight: 500;
-<<<<<<< HEAD
-    src: url('../assets/fonts/palanquin/palanquin-v17-latin-500.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-=======
     font-style: normal;
     font-display: swap;
->>>>>>> 7d0898b5dfeb00fe9a2baae70c4e9414cb95c1a7
 }
 
 @font-face {
     font-family: 'Palanquin';
     src: url('../assets/fonts/font-Palanquin/palanquin/Palanquin-SemiBold.ttf') format('truetype');
     font-weight: 600;
-<<<<<<< HEAD
     src: url('../assets/fonts/palanquin/palanquin-v17-latin-600.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
@@ -116,8 +104,6 @@
     font-family: 'Palanquin';
     src: url('../assets/fonts/palanquin/palanquin-dark-v17-latin-regular.woff2') format('woff2');
     font-weight: 400;
-=======
->>>>>>> 7d0898b5dfeb00fe9a2baae70c4e9414cb95c1a7
     font-style: normal;
     font-display: swap;
 }
