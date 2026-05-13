@@ -34,6 +34,7 @@ h4 {
     font-size: 64px;
     font-weight: 700;
     color: var(--global-h4-color);
+    line-height: 100%;
 }
 
 h5 {
@@ -41,6 +42,7 @@ h5 {
     font-size: 40px;
     font-weight: 600;
     color: var(--global-h5-color);
+    line-height: 120%;
 }
 
 h6 {
@@ -48,6 +50,7 @@ h6 {
     font-size: 32px;
     font-weight: 400;
     color: var(--global-h6-color);
+    line-height: 120%;
 }
 
 .header {
@@ -159,6 +162,7 @@ h6 {
     font-weight: 400;
     color: #54370D;
     line-height: 120%;
+    line-height: 120%;
 }
 
 .article-info img {
@@ -188,6 +192,7 @@ h6 {
 
 .author-card p {
     color: #54370D;
+    line-height: 120%;
 }
 
 .author-name p {
@@ -239,6 +244,7 @@ h6 {
     font-family: "Palanquin";
     font-size: 28px;
     font-weight: 700;
+    line-height: 120%;
 }
 
 .pro-tipps-tipps {
@@ -255,6 +261,7 @@ h6 {
     font-size: 24px;
     font-weight: 400;
     color: #3D3D3D;
+    line-height: 120%;
 }
 
 .pro-tipps-tipps a {
@@ -263,6 +270,7 @@ h6 {
     text-decoration: none;
     color: #4EA487;
     font-weight: 700;
+    line-height: 120%;
 }
 
 .share-section {
@@ -283,6 +291,7 @@ h6 {
     text-align: center;
     max-width: 463px;
     max-height: 58px;
+    line-height: 120%;
 }
 
 .groß-img img {
@@ -467,15 +476,16 @@ footer img {
 @media screen and (max-width:1280px) {
     .hero-section-layout {
         flex-direction: column;
+        padding: 0 32px;
     }
 
     .author-card {
-    flex-direction: row;
-    width: 100%;       
-    margin-top: 40px;
-    justify-content: center;
-    gap: 40px;
-  }
+        flex-direction: row;
+        width: 100%;
+        margin-top: 40px;
+        justify-content: center;
+        gap: 40px;
+    }
 
     .author-bio {
         width: 65ch;
@@ -499,13 +509,13 @@ footer img {
 @media screen and (min-width:875px) {
     .hero-section-layout {
         margin-top: 168px;
-        padding: 0 50px;
+        padding: 0 32px;
     }
 
     .pro-tipps {
         width: 100%;
         margin: 40px 0 0;
-        padding: 0 50px;
+        padding: 0 32px;
     }
 }
 
@@ -513,7 +523,7 @@ footer img {
     .hero-section-layout {
         width: 100%;
         margin-top: 168px;
-        padding: 0 50px;
+        padding: 0 32px;
     }
 
     .hero-section {
@@ -521,26 +531,30 @@ footer img {
     }
 
     .author-card {
-    flex-direction: row;     
-    justify-content: center;
-    gap: 40px;
-  }
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
 
     .author-bio {
         width: 100%;
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:767px) {
+    .hero-section-layout {
+        margin: 100px auto 0;
+    }
+
     .pro-tipps {
-        padding: 0 20px;
+        padding: 0 32px;
         margin: 40px 0 0;
     }
 }
 
 @media screen and (max-width: 700px) {
     .hero-section-layout {
-        padding: 0 20px;
+        padding: 0 32px;
     }
 }
 
@@ -553,7 +567,7 @@ footer img {
 @media screen and (max-width:544px) {
     .share-section {
         width: 100%;
-        padding: 0 20px;
+        padding: 0 32px;
     }
 
     .groß-img img {
@@ -630,10 +644,10 @@ footer img {
     }
 }
 
-@media screen and (max-width:380px) {
+@media screen and (max-width:479px) {
     .hero-section-layout {
         margin: calc(80px + 24px) 0 0;
-        padding: 0 10px;
+        padding: 0 16px;
     }
 
     .author-card {
@@ -644,7 +658,7 @@ footer img {
 
     .pro-tipps {
         margin: 40px 0 0 0;
-        padding: 0 10px;
+        padding: 0 16px;
     }
 
     .pro-tipps-tipps {
