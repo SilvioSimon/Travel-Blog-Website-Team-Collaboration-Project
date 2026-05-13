@@ -80,6 +80,13 @@
   margin-top: auto;
 }
 
+main {
+  width: 100%;
+  max-width: 1220px;
+  margin-left: unset;
+  margin-right: unset;
+}
+
 @media screen and (max-width: 1100px) {
 
   .graph-2-headline,
