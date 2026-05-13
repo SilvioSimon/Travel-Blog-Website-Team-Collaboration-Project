@@ -240,12 +240,10 @@ main {
 .highlights-slider-text h3 {
     display: flex;
     color: white;
-    font-family: "Palanquin dark";
+    font-family: "Palanquin Dark";
     font-weight: 600;
-    font-style: SemiBold;
     font-size: 48px;
     line-height: 100%;
-    font-family: Palanquin Dark;
     letter-spacing: 0%;
     margin-bottom: 8px;
 }
