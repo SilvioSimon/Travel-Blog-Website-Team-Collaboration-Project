@@ -81,7 +81,7 @@ ul li::marker {
 
 @media screen and (max-width: 1280px) {
   .article-lorem {
-    padding: 64px 32px;
+    padding: 0px 32px;
   }
 }
 
@@ -93,6 +93,11 @@ ul li::marker {
   .container-video {
     padding: 0 32px;
   }
+
+  .article-lorem {
+    margin: 0 132px;
+  }
+
 }
 
 @media screen and (max-width: 479px) {
