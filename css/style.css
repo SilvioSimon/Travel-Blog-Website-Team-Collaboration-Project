@@ -251,7 +251,7 @@ main {
 .highlights-slider-text p {
     width: 820px;
     height: 93px;
-    font-family: "Palanquin", latin;
+    font-family: "Palanquin";
     font-weight: 400;
     font-size: 28px;
     line-height: 110%;
@@ -554,7 +554,7 @@ label {
 
 .policy-container label {
     font-size: 16px;
-    font-family: 'Palanquin', Latin, sans-serif;
+    font-family: 'Palanquin';
 
     display: inline;
     color: rgba(84, 55, 13, 1);

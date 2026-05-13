@@ -86,13 +86,13 @@
     font-display: swap;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Palanquin Dark';
     src: url('../assets/fonts/font-Palanquin/palanquin-dark-v17-latin-600.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 :root {
     --nav-footer-bg-color: rgba(78, 164, 135, 1);
