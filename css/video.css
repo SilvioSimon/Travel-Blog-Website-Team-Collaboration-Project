@@ -79,12 +79,6 @@ ul li::marker {
   line-height: 120%;
 }
 
-@media screen and (max-width: 1280px) {
-  .article-lorem {
-    padding: 64px 32px;
-  }
-}
-
 @media screen and (max-width: 1040px) {
   .image-wrapper {
     border-radius: 30px;
