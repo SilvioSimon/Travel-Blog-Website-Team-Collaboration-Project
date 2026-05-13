@@ -454,11 +454,21 @@ textarea {
     background-color: transparent !important;
     border-radius: 0;
     outline: none;
-    font-family: Palanquin;
+    font-family: Palanquin, sans-serif;
     font-size: 25px;
     resize: none;
     line-height: 1.2;
-    height: 52px;
+
+}
+
+input[type=text]:-webkit-autofill,
+input[type=text]:-webkit-autofill:hover,
+input[type=text]:-webkit-autofill:focus,
+input[type=email]:-webkit-autofill,
+input[type=email]:-webkit-autofill:hover,
+input[type=email]:-webkit-autofill:focus {
+    -webkit-text-fill-color: initial;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 
