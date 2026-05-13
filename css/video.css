@@ -1,7 +1,8 @@
 .article-lorem {
   width: 100%;
-  max-width: 1240px;
-  padding: 64px 64px;
+  max-width: 1201px;
+  margin: 88px 100px;
+  max-width: 1201px;
 }
 
 .article-lorem p {
@@ -54,7 +55,9 @@
 }
 
 .image-wrapper img:first-child {
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .container-video a:hover .image-wrapper img:first-child {
