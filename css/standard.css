@@ -461,17 +461,11 @@ footer img {
     display: none;
 }
 
-@media screen and (min-width:1440px) {
-    .hero-section-layout {
-        width: 1440px;
-    }
-}
-
 @media screen and (max-width:1440px) {
     .hero-section {
         width: 100%;
     }
-}
+} 
 
 @media screen and (max-width:1280px) {
     .hero-section-layout {
@@ -664,5 +658,13 @@ footer img {
     .pro-tipps-tipps {
         margin: 10px 0 0;
         padding: 24px 0;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .hero-section-layout {
+        width: 1200px;
+        gap: 8px;
+        padding: 0;
     }
 }
