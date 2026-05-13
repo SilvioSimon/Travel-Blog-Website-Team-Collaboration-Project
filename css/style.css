@@ -927,7 +927,7 @@ footer img {
         font-size: 20px;
         width: 100%;
         display: -webkit-box;
-        -webkit-line-clamp: unset;
+        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
         height: auto;
