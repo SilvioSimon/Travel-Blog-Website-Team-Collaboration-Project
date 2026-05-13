@@ -69,7 +69,7 @@ body {
 .hero-layer-text p {
     max-width: 345px;
     width: 50%;
-    font-family: "Palanquin";
+    font-family: "Palanquin latin", sans-serif;
     font-size: 28px;
     font-weight: 500;
     color: #54370d;
@@ -213,8 +213,8 @@ main {
 .highlights_p {
     padding: 40px 110px;
     display: flex;
-    font-size: 28px;
-    font-family: palanquin;
+    font-size: 24px;
+    font-family: 'Palanquin latin', sans-serif;
     font-weight: 500;
 }
 
@@ -251,9 +251,9 @@ main {
 .highlights-slider-text p {
     width: 820px;
     height: 93px;
-    font-family: "Palanquin";
+    font-family: "Palanquin latin", sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 110%;
 }
 
@@ -393,7 +393,7 @@ details {
 }
 
 summary {
-    font-family: palanquin;
+    font-family: 'Palanquin latin', sans-serif;
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
@@ -404,7 +404,7 @@ details[open] p {
     padding: 15px;
     margin-top: 10px;
     border-radius: 5px;
-    font-family: palanquin;
+    font-family: 'Palanquin latin', sans-serif;
 }
 
 details[open] summary {
@@ -454,11 +454,11 @@ textarea {
     background-color: transparent !important;
     border-radius: 0;
     outline: none;
-    font-family: Palanquin, sans-serif;
     font-size: 25px;
     resize: none;
     line-height: 1.2;
     height: 52px;
+    font-family: 'Palanquin latin', sans-serif;
 
 }
 
@@ -502,8 +502,8 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     padding: 20px 0px;
-    font-size: 28px;
-    font-family: Palanquin;
+    font-size: 24px;
+    font-family: 'Palanquin latin', sans-serif;
     font-weight: 500;
 }
 
@@ -533,7 +533,7 @@ input[type=submit]:hover {
 }
 
 label {
-    font-family: 'Palanquin', sans-serif;
+    font-family: 'Palanquin latin', sans-serif;
     font-size: 24px;
     font-weight: 500;
     color: rgba(84, 55, 13, 1);
@@ -565,7 +565,7 @@ label {
 
 .policy-container label {
     font-size: 16px;
-    font-family: 'Palanquin';
+    font-family: 'Palanquin latin', sans-serif;
 
     display: inline;
     color: rgba(84, 55, 13, 1);
@@ -644,7 +644,7 @@ footer img {
 
 .footer-left a {
     text-decoration: none;
-    font-family: palanquin;
+    font-family: 'Palanquin latin', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
@@ -1124,7 +1124,7 @@ footer img {
     }
 
     .policy-container label {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .policy-container input[type="checkbox"] {
