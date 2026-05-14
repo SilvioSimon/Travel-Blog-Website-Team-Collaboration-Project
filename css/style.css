@@ -301,7 +301,7 @@ main {
     object-fit: cover;
     display: block;
     aspect-ratio: 16 / 9;
-    border-top-right-radius: 100px;
+
 }
 
 .slider-main-element {
@@ -311,6 +311,7 @@ main {
     justify-content: flex-end;
     width: calc(100% / 4);
     height: 533px;
+    overflow: hidden;
 }
 
 .slider-main input[value="one"]:checked~.slider-main-wrapper {
