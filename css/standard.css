@@ -401,10 +401,7 @@ footer {
     background-color: var(--nav-footer-bg-color);
 }
 
-footer img {
-    width: 28px;
-    height: 28px;
-}
+
 
 .footer-txt {
     display: flex;
