@@ -640,7 +640,7 @@ footer {
 
 .footer-imprint-cookies {
     display: flex;
-    gap: 24px;
+    gap: 90px;
 }
 
 .footer-left a {
@@ -1134,7 +1134,11 @@ footer {
     }
 
     .footer-left {
-        gap: 30px;
+        gap: 50px;
+    }
+
+    .footer-imprint-cookies {
+        gap: 50px;
     }
 
     .footer-tiktok-img {
