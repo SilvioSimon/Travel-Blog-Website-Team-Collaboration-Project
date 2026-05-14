@@ -312,6 +312,7 @@ main {
     width: calc(100% / 4);
     height: 533px;
     overflow: hidden;
+
 }
 
 .slider-main input[value="one"]:checked~.slider-main-wrapper {
@@ -721,7 +722,7 @@ footer {
     }
 
     .slider-main {
-        border-top-right-radius: 100px;
+
         width: calc(100% - 0px);
     }
 
@@ -922,7 +923,7 @@ footer {
         }
 
         .slider-main {
-            border-top-right-radius: 100px;
+
             display: flex;
             width: calc(100% - 40px);
         }
@@ -1070,7 +1071,6 @@ footer {
     }
 
     .slider-main {
-        border-top-right-radius: 100px;
         display: flex;
         width: calc(100% - 0px);
     }
