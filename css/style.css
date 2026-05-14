@@ -278,6 +278,7 @@ main {
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
+    border-top-right-radius: 100px;
 }
 
 .slider-main input {
