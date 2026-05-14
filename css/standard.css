@@ -440,14 +440,28 @@ footer img {
 
 }
 
-.footer-right img {
+/*.footer-right img {
+    width: 32px;
+    height: 32px;
+}*/
+.footer-tiktok-img {
     width: 32px;
     height: 32px;
 }
 
 .footer-youtube-img {
     width: 44px;
+    height: 32px;
+}
 
+.footer-facebook-img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-instagram-img {
+    width: 32px;
+    height: 32px;
 }
 
 .footer-right {
@@ -465,7 +479,7 @@ footer img {
     .hero-section {
         width: 100%;
     }
-} 
+}
 
 @media screen and (max-width:1280px) {
     .hero-section-layout {

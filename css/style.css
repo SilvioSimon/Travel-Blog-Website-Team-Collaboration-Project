@@ -78,6 +78,7 @@ body {
     animation: appear-p 1s ease-in-out forwards;
     animation-delay: 1s;
     opacity: 0;
+
 }
 
 .hero-layer-photo img {
@@ -612,10 +613,10 @@ footer {
     background-color: var(--nav-footer-bg-color);
 }
 
-footer img {
+/*footer img {
     width: 28px;
     height: 28px;
-}
+}*/
 
 .footer-txt {
     display: flex;
@@ -650,13 +651,14 @@ footer img {
     color: rgba(255, 255, 255, 1);
 }
 
-.footer-right img {
+/*.footer-right img {
     width: 32px;
     height: 32px;
-}
+}*/
 
 .footer-youtube-img {
     width: 44px;
+    height: 32px;
 
 }
 
@@ -830,26 +832,41 @@ footer img {
     .footer-left {
         display: flex;
         align-items: center;
-        gap: unset;
+        gap: 10px;
         flex-direction: column-reverse;
         width: 100%;
     }
 
     .footer-imprint-cookies {
         display: flex;
-        gap: unset;
+        gap: 10px;
         flex-direction: column;
     }
 
-    .footer-right img {
+    .footer-tiktok-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-youtube-img {
+        width: 44px;
+        height: 24px;
+    }
+
+    .footer-facebook-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-instagram-img {
         width: 24px;
         height: 24px;
     }
 
     .footer-right {
         display: flex;
-        padding-left: 10px;
-        gap: 10px;
+        padding-left: 14px;
+        gap: 7px;
         width: 100%;
         padding-right: unset;
     }
@@ -962,24 +979,39 @@ footer img {
         padding-top: unset;
         padding-left: unset;
         padding-right: unset;
-        padding-left: 16px;
+
     }
 
     .footer-left {
         display: flex;
         align-items: center;
-        gap: unset;
+        gap: 10px;
         flex-direction: column-reverse;
-        width: 100%;
+        width: 40%;
     }
 
     .footer-imprint-cookies {
         display: flex;
-        gap: unset;
+        gap: 10px;
         flex-direction: column;
     }
 
-    .footer-right img {
+    .footer-tiktok-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-youtube-img {
+        width: 44px;
+        height: 24px;
+    }
+
+    .footer-facebook-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-instagram-img {
         width: 24px;
         height: 24px;
     }
@@ -987,9 +1019,9 @@ footer img {
     .footer-right {
         display: flex;
         justify-content: space-around;
-        padding-left: 40px;
         gap: 10px;
-        width: 100%;
+        width: 60%;
+        padding-right: unset;
     }
 
     .mobile-navbar {
@@ -1105,6 +1137,27 @@ footer img {
         gap: 30px;
     }
 
+    .footer-tiktok-img {
+        width: 28px;
+        height: 32px;
+    }
+
+    .footer-youtube-img {
+        width: 40px;
+        height: 32px;
+    }
+
+    .footer-facebook-img {
+        width: 28px;
+        height: 32px;
+    }
+
+    .footer-instagram-img {
+        width: 28px;
+        height: 32px;
+    }
+
+
     .footer-right {
         gap: 16px;
         padding-left: unset;
@@ -1218,11 +1271,12 @@ footer img {
     .hero-layer-text h1 {
         animation: none;
         width: 261px;
-        height: 43px;
+        height: 55px;
         font-size: 40px;
         display: flex;
         overflow: hidden;
         transform: translateY(0%);
+
     }
 
     .hero-layer-text p {
