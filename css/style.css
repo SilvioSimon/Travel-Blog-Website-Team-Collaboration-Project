@@ -1032,6 +1032,8 @@ footer {
         justify-content: space-around;
         align-items: center;
         z-index: 9999;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .mobile-menu img {
