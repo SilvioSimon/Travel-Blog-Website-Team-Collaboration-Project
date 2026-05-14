@@ -93,6 +93,7 @@ body {
     overflow: hidden;
     object-fit: cover;
     object-position: center;
+    left: 230px;
 }
 
 .hero-layer-first-wave img {
@@ -1306,7 +1307,7 @@ footer {
         z-index: -1;
         height: 515px;
         width: 1440px;
-
+        left: 160px;
         opacity: 1;
         position: absolute;
         justify-content: center;
