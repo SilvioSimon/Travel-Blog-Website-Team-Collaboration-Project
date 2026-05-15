@@ -324,7 +324,7 @@ button {
     display: flex;
     outline: none;
     transition: all 0.3s ease-in-out;
-
+    cursor: pointer;
 }
 
 .share-button img {
@@ -345,9 +345,8 @@ button {
     display: flex;
     justify-content: right;
     align-items: center;
-    width: 220px;
+    width: 280px;
     height: 54px;
-    gap: 10px;
     display: none;
 }
 
@@ -361,6 +360,10 @@ button:focus-within {
     display: flex;
     justify-content: center;
     width: 273px;
+    cursor: pointer;
+}
+.share-section:focus-within button{
+    gap: 10px;
 }
 
 .share-section:focus-within .share-button>img {
@@ -374,12 +377,12 @@ button:focus-within {
 .share-section:focus-within .share-button {
     width: auto;
     justify-content: center;
-
 }
 
 .share-option-options {
     display: flex;
     flex-direction: column;
+    width: 112px;
 }
 
 .share-option-options a {
@@ -392,6 +395,7 @@ button:focus-within {
 
 .share-option-options a:hover {
     font-weight: 700;
+    width: 112px;
 }
 
 footer {
