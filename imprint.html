@@ -6,31 +6,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/logo 03 1.svg">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .impressum {
             line-height: 1.6;
             font-family: Arial, sans-serif;
             max-width: 800px;
-            margin: 20px auto;
         }
 
         h1 {
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
+            color: rgba(78, 164, 135, 1);
+            margin-top: 135px;
         }
 
         h2 {
             font-size: 1.2em;
             margin-top: 20px;
+            color: rgba(241, 201, 83, 1);
         }
 
         p {
             margin: 5px 0;
         }
+
+        .header {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            height: 128px;
+            position: absolute;
+            background-color: var(--nav-footer-bg-color);
+        }
+
+        .header-navbar {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 1440px;
+            flex-direction: row;
+            align-items: center;
+            gap: 102px;
+            margin-left: 146px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgba(248, 245, 235, 1);
+            font-family: Arima;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 72px;
+            list-style: none;
+        }
+
+        .nav-special-hover {
+            position: relative;
+            display: inline-block;
+        }
+
+        .nav-special-hover::after {
+            content: '';
+            position: absolute;
+            left: 55%;
+            bottom: 2px;
+            width: 100%;
+            height: 15px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
+            transform: translateX(-50%) scaleX(0);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .highlight-hover::after {
+            background-image: url(../assets/icons/hover-highlight.svg);
+        }
+
+        .faq-hover::after {
+            background-image: url(../assets/icons/hover-faq.svg);
+        }
+
+        .contact-hover::after {
+            background-image: url(../assets/icons/hover-contact.svg);
+            left: 50%;
+        }
+
+        .nav-special-hover:hover::after {
+            opacity: 1;
+            transform: translateX(-50%) scaleX(1.1);
+        }
+
+        .nav-special-hover:active {
+            color: rgba(241, 201, 83, 1);
+        }
+
+        footer {
+            display: flex;
+            width: 100%;
+            height: 128px;
+            background-color: var(--nav-footer-bg-color);
+        }
+
+
+
+        .footer-txt {
+            display: flex;
+            height: 128px;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            padding: 60px 120px;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 90px;
+        }
+
+        .footer-copyright {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-imprint-cookies {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-left a {
+            text-decoration: none;
+            font-family: palanquin;
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+
+        }
+
+        /*.footer-right img {
+    width: 32px;
+    height: 32px;
+}*/
+        .footer-tiktok-img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .footer-youtube-img {
+            width: 44px;
+            height: 32px;
+        }
+
+        .footer-facebook-img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .footer-instagram-img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .footer-right {
+            display: flex;
+            gap: 16px;
+            width: 44px;
+            padding-right: 250px;
+        }
     </style>
 </head>
 
 <body>
+    <header id="home" class="header">
+        <div class="header-navbar">
+            <a href="index.html">
+                <img src="assets/icons/logo 03 1.svg" alt="Logo Blog">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="nav-special-hover highlight-hover" href="#highlights">Highlights</a></li>
+                    <li><a class="nav-special-hover faq-hover" href="#faq">FAQ</a></li>
+                    <li><a class="nav-special-hover contact-hover" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div id="top" class="impressum">
         <h1>Impressum</h1>
 
@@ -97,7 +270,30 @@
         </section>
 
     </section>
-
+    <footer>
+        <div class="footer-txt">
+            <div class="footer-left">
+                <div class="footer-copyright">
+                    <img src="assets/icons/copyright-footer.svg" alt="copyright Logo">
+                    <a href="imprint.html#Copyrights">Travel Blog 2026</a>
+                </div>
+                <div class="footer-imprint-cookies">
+                    <a href="imprint.html#top">Imprint</a>
+                    <a href="imprint.html#Cookies">Cookie Preferences</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="https://tiktok.com" target="_blank"> <img class="footer-tiktok-img"
+                        src="assets/icons/Tiktok_icon 1.svg" alt="TicToc Logo"></a>
+                <a href="https://youtube.com" target="_blank"><img class="footer-youtube-img"
+                        src="assets/icons/youtube-footer.svg" alt="Youtube logo"></a>
+                <a href="https://facebook.com" target="_blank"><img class="footer-facebook-img"
+                        src="assets/icons/facebook-footer.svg" alt="Facebook Logo"></a>
+                <a href="https://instagram.com" target="_blank"><img class="footer-instagram-img"
+                        src="assets/icons/Instagram_logo_footer.svg" alt="Instagram Logo"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
