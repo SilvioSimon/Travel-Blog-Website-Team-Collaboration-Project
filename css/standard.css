@@ -193,6 +193,7 @@ h6 {
 .author-card p {
     color: #54370D;
     line-height: 120%;
+    font-family: Palanquin;
 }
 
 .author-name p {
@@ -362,7 +363,8 @@ button:focus-within {
     width: 273px;
     cursor: pointer;
 }
-.share-section:focus-within button{
+
+.share-section:focus-within button {
     gap: 10px;
 }
 
