@@ -280,6 +280,9 @@ main {
     align-items: flex-end;
     overflow: hidden;
     border-top-right-radius: 100px;
+    isolation: isolate;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .slider-main input {
