@@ -654,8 +654,6 @@ footer {
     color: rgba(255, 255, 255, 1);
 }
 
-
-
 .footer-youtube-img {
     width: 44px;
     height: 32px;
@@ -881,8 +879,6 @@ footer {
         justify-content: space-around;
         align-items: center;
         z-index: 9999;
-
-
     }
 
     .mobile-menu img {
@@ -897,7 +893,6 @@ footer {
         margin: unset;
         width: 100%;
     }
-
 
     .header-navbar {
         justify-content: center;
